@@ -3,62 +3,55 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Kaijun's Blog
-subtitle: To Be A Lean Developer!
-author: Kaijun Chen
-language:
+title: Full-Stack Engineering 
+subtitle: 努力作懂技術又懂產品的全端工程師 ：）
+author: 張凱迪（KD Chang）
+language: zh-tw
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://kaijun.rocks
-root: /hexo-theme-huxblog/
+url: http://blog.kdchang.cc
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
 #Custom Setting Start
 
 # Site settings
-SEOTitle: Kaijun的博客 | Kaijun's Blog
-header-img: img/home-bg.jpg
-email: Kaijun.cn@gmail.com
-description: ""
-keyword: ""
+SEOTitle: Full-Stack Engineering 全端工程技術筆記
+header-img: img/cover.jpg
+email: kdchang.cc@gmail.com
+description: "Full-Stack Engineering 全端工程技術筆記"
+keyword: "全端工程, full-stack-engineering, full stack, Engineering, coding, tech, startup, frontend, web, mobile, data, bots"
 
 
 # SNS settings
 # RSS: false
-weibo_username:     Demonbane
-zhihu_username:     Demonbane
-github_username:    Kaijun
-twitter_username:   Demonbane_x
-facebook_username:  demonbane.cn
-linkedin_username:  kaijun-chen-42089354
+# weibo_username:     Demonbane
+# zhihu_username:     Demonbane
+github_username:    kdchang
+twitter_username:   kaidichang
+facebook_username:  KaiDi.Chang
+# linkedin_username:  kaijun-chen-42089354
 
 # Build settings
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
-
 # Disqus settings
-#disqus_username: _your_disqus_short_name_
-
-# Duoshuo settings
-duoshuo_username: kaijun
-# Share component is depend on Comment so we can NOT use share only.
-duoshuo_share: true                     # set to false if you want to use Comment without Sharing
-
+disqus_username: full-stack-engineering
 
 # Analytics settings
 # Baidu Analytics
-ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
+# ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
 # Google Analytics
-ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-ga_domain: huangxuan.me
+ga_track_id: 'UA-47712654-1'            # Format: UA-xxxxxx-xx
+ga_domain: blog.kdchang.cc
 
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "我要成为魔法师!"
+sidebar-about-description: "文藝型開發者，夢想是做出人們想用的產品和辦一所心目中理想的學校，目前專注在 Mobile 和 IoT 應用開發。A Starter & Maker. JavaScript, Python & iOS/Android lover. Keep Shipping Cool Mobile App & Web App.:)"
 sidebar-avatar: /img/avatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
@@ -70,23 +63,23 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 # Friends
 friends: [
     {
-        title: "Kaijun's Blog",
-        href: "http://blog.kaijun.rocks"
+        title: "@arvinh",
+        href: "http://blog.arvinh.info/about/"
     },{
-        title: "Hux Blog",
-        href: "http://huangxuan.me"
+        title: "@huli",
+        href: "http://huli.logdown.com/"
     },{
-        title: "Foo",
-        href: "#"
+        title: "@pojenlai",
+        href: "https://pojenlai.wordpress.com/"
     },{
-        title: "Bar",
-        href: "#"
+        title: "TechBridge Weekly 技術週刊",
+        href: "http://weekly.techbridge.cc/"
     },{
-        title: "Example Friends",
-        href: "#"
+        title: "TechBridge Blog",
+        href: "http://blog.techbridge.cc/"
     },{
-        title: "It helps SEO",
-        href: "#"
+        title: "TechBridge 技術日報",
+        href: "http://www.techbridge.cc/"
     }
 ]
 
@@ -122,7 +115,7 @@ highlight:
   tab_replace:
 
 # Category & Tag
-default_category: uncategorized
+default_category: web
 category_map:
 tag_map:
 
@@ -138,14 +131,80 @@ time_format: HH:mm:ss
 per_page: 10
 pagination_dir: page
 
+
+## Google Analytics
+google_analytics:
+  enable: true
+  id: UA-47712654-1
+  site: auto
+
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: huxblog
+plugins:
+  hexo-generator-cname
+  hexo-generator-robotstxt
+
+# hexo sitemap
+sitemap:
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml
+
+## social
+addthis:
+  enable: true
+  pubid:
+  facebook: true
+  twitter: true
+  google: true
+  pinterest: true
+
+## robots.txt
+robotstxt:
+  useragent: "*"
+  disallow:
+    - /js/
+    - /css/
+    - /fonts/
+    - /vendors/
+    - /fancybox/
+  allow:
+    - /
+    - /archives/
+  sitemap: 
+    - /sitemap.xml
+  baidusitemap: 
+    - /baidusitemap.xml
+
+## RSS
+feed:
+  type: atom
+  path: atom.xml
+  limit: 30
+  hub:  
+
+## category
+category_generator:
+  per_page: 10
+
+## archive
+archive_generator:
+  per_page: 10
+  yearly: true
+  monthly: true
+  daily: false
+
+## Search 
+search:
+  path: search.xml
+  field: post
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
-deploy:
+deploy: 
   type: git
-  repo: https://github.com/Kaijun/hexo-theme-huxblog
+  repo: https://github.com/kdchang/blog.git
   branch: gh-pages
+#  https://www.flickr.com/photos/derek-john-lee/14698093740/in/photolist-ooPzcj-r2kVt-ppV21v-brhFX3-wd3Qsy-cLiKEL-xDR92-28QCtA-29YFZZ-gzuZk-dqbhxt-9FwCBY-q57bEv-bVhZJr-dYxGXn-dxg9g7-8x7gjU-dzjMic-rQhf-9TMgJ3-mEsFjW-qbzd4p-q6cJvc-7zYttk-q2gE5S-bdb4G4-8ifmQN-eivVeg-9ZZFVz-aD6q6r-bnjfWh-qJAn2g-k22Ttf-n9Jhfj-kk4woh-sj43iz-5NYGUn-96wNhi-9ZZFz6-8DJkQf-4wQizw-3bzz8p-9yzTSd-xDQee-68Xwfp-7t5WPx-xDTM5-o5RPYA-kWihhy-7iHDEX
