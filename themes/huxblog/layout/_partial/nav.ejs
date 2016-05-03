@@ -24,7 +24,6 @@
                     <li>
                         <a href="<%= config.root %>">Home</a>
                     </li>
-
                     <% site.pages.forEach(function(page){ %>
 
                         <% if(page.title){ %>
@@ -33,7 +32,9 @@
                         </li>
                         <% } %>
                     <% }); %>
-                    
+                    <li>
+                        <a href="/atom.xml">RSS</a>
+                    </li>                 
                 </ul>
             </div>
         </div>

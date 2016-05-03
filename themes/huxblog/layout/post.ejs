@@ -42,17 +42,14 @@ layout: layout
                 col-md-10 col-md-offset-1
                 post-container">
 
-                <div class="fb-like" data-href="<%- url %>" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div> 
-                
+                <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                <div class="addthis_native_toolbox"></div>
+
                 <%- page.content %>
 
-                <div class="fb-like" data-href="<%- url %>" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div> 
                 <br>
-                <div class="sharethis-social-share-block">
-                <span class='st_twitter_hcount' displayText='Tweet'></span>
-                <span class='st_plusone_hcount' displayText='Google +1'></span>
-                <span class='st_email_hcount' displayText='Email'></span>
-                </div>
+                <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                <div class="addthis_native_toolbox"></div>
                 
                 <hr>
                 <% if(config['disqus_username']) { %>
