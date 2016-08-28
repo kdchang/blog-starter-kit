@@ -19,10 +19,10 @@ permalink_defaults:
 #Custom Setting Start
 
 # Site settings
-SEOTitle: Startup Engineering 創業工程技術筆記
+SEOTitle: Startup Engineering 新創工程技術筆記
 header-img: img/cover.jpg
 email: kdchang.cc@gmail.com
-description: "Startup Engineering 創業工程技術筆記"
+description: "Startup Engineering 新創工程技術筆記"
 keyword: "startup, startup engineering, 全端工程, full-stack-engineering, full stack, Engineering, Startup Engineering, coding, tech, startup, frontend, web, mobile, data, bots"
 
 
