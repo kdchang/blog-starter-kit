@@ -23,7 +23,7 @@ SEOTitle: Startup Engineering 創業工程技術筆記
 header-img: img/cover.jpg
 email: kdchang.cc@gmail.com
 description: "Startup Engineering 創業工程技術筆記"
-keyword: "全端工程, full-stack-engineering, full stack, Engineering, Startup Engineering, coding, tech, startup, frontend, web, mobile, data, bots"
+keyword: "startup, startup engineering, 全端工程, full-stack-engineering, full stack, Engineering, Startup Engineering, coding, tech, startup, frontend, web, mobile, data, bots"
 
 
 # SNS settings
@@ -39,7 +39,7 @@ facebook_username:  KaiDi.Chang
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
 # Disqus settings
-disqus_username: full-stack-engineering
+disqus_username: startup-engineering
 
 # Analytics settings
 # Baidu Analytics
@@ -51,7 +51,7 @@ ga_domain: blog.kdchang.cc
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "文藝型開發者，夢想是做出人們想用的產品和辦一所心目中理想的學校，目前專注在 Mobile 和 IoT 應用開發。A Starter & Maker. JavaScript, Python & iOS/Android lover. Keep Shipping Cool Mobile App & Web App.:)"
+sidebar-about-description: "文藝型開發者，夢想是做出人們想用的產品和辦一所心目中理想的學校，目前專注在 Mobile 和 IoT 應用開發。A Starter & Maker. JavaScript, Python & Arduino/Android lover.:)"
 sidebar-avatar: /img/avatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
