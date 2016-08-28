@@ -3,8 +3,8 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Full-Stack Engineering 
-subtitle: 努力作懂技術又懂產品的全端工程師 ：）
+title: Startup Engineering 
+subtitle: 努力作懂技術又懂產品的工程師 ：）
 author: 張凱迪（KD Chang）
 language: zh-tw
 timezone:
@@ -19,11 +19,11 @@ permalink_defaults:
 #Custom Setting Start
 
 # Site settings
-SEOTitle: Full-Stack Engineering 全端工程技術筆記
+SEOTitle: Startup Engineering 創業工程技術筆記
 header-img: img/cover.jpg
 email: kdchang.cc@gmail.com
-description: "Full-Stack Engineering 全端工程技術筆記"
-keyword: "全端工程, full-stack-engineering, full stack, Engineering, coding, tech, startup, frontend, web, mobile, data, bots"
+description: "Startup Engineering 創業工程技術筆記"
+keyword: "全端工程, full-stack-engineering, full stack, Engineering, Startup Engineering, coding, tech, startup, frontend, web, mobile, data, bots"
 
 
 # SNS settings
