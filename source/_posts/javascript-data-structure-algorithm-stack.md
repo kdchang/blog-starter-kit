@@ -1,14 +1,11 @@
 ---
 title: 用 JavaScript 學習資料結構和演算法：堆疊（Stack）篇
 date: 2016-06-24 22:00:00
-tags: JavaScript, ECMAScript2015, ES6 ,Data Structure, Algorithm, Stack, 資料結構, 演算法, 堆疊 
+tags: JavaScript, ECMAScript2015, ES6, Data Structure, Algorithm, Stack, 資料結構, 演算法, 堆疊 
 author: kdchang
 ---
 
 ![用 JavaScript 學習資料結構和演算法：堆疊（Stack）篇](stack.png)
-
-# 前言
-在 CS 江湖上曾傳言：`程式設計 = 資料結構 + 演算法`。在一般的大專院校裡，資料結構（Data Structure）與演算法（Algorithm）幾乎都是電腦科學（Computer Science）和資訊相關科系的基礎必修課，在這些課堂中多半是使用 C/C++ 或是 Java 進行教學，許多初學學生也因為對於這些語言的掌握度不夠，反而迷失在資料結構和演算法的世界裡，然而本系列文章將透過 JavaScript 去學習一些經典的資料結構和演算法。作為一個早期限於瀏覽器端開發的程式語言，現在的 JavaScript 早已不能同日而語，不管是前後端開發、行動端、桌面端、硬體開發等都可以看到它的身影，而 JavaScript 輕量和搭配便利的瀏覽器開發者工具特性也讓學習資料結構和演算法更為有趣！本篇將使用 JavaScript 來介紹堆疊（Stack）這個經典的資料結構。
 
 # 什麼是堆疊（Stack）？
 根據教科書的說法：堆疊是一種遵循 `後進先出`（Last In First Out，`LIFO`）的有序集合。在堆疊的世界裡，由於遵守後進先出原則，較新的元素會靠近頂部（堆疊尾部），較舊的元素會在堆疊的底部。在程式語言中，方法（method）的呼叫、運算式的轉換（例如：中序轉後序）或是編譯器和記憶體中儲存變數等都可以看到堆疊的應用。

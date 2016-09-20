@@ -7,10 +7,7 @@ author: kdchang
 
 ![用 JavaScript 學習資料結構和演算法：佇列（Queue）篇](queue.png)
 
-# 前言
-在 CS 江湖上曾傳言：`程式設計 = 資料結構 + 演算法`。在一般的大專院校裡，資料結構（Data Structure）與演算法（Algorithm）幾乎都是電腦科學（Computer Science）和資訊相關科系的基礎必修課，在這些課堂中多半是使用 C/C++ 或是 Java 進行教學，許多初學學生也因為對於這些語言的掌握度不夠，反而迷失在資料結構和演算法的世界裡，然而本系列文章將透過 JavaScript 去學習一些經典的資料結構和演算法。作為一個早期限於瀏覽器端開發的程式語言，現在的 JavaScript 早已不能同日而語，不管是前後端開發、行動端、桌面端、硬體開發等都可以看到它的身影，而 JavaScript 輕量和搭配便利的瀏覽器開發者工具特性也讓學習資料結構和演算法更為有趣！本篇將使用 JavaScript 來介紹佇列（Queue）這個經典的資料結構。
-
-## 什麼是佇列（Queue）？
+# 什麼是佇列（Queue）？
 佇列（Queue）是一種先進先出（First In First Out, FIFO）的有序串列（Ordered List），與堆疊（Stack）後進先出（Last In First Out, LIFO）不同的是佇列（Queue）的新增和刪除元素是發生在不同端，新增元素在尾部、移除元素在頂部，最新加入的元素會從尾部排入。在一般生活中比較常見的例子是電影院排隊買票、小七便利商店排隊付款（當然不能有人想插隊啦），在計算機科學領域佇列（Queue）應用也十分常見，像是印表機列印順序排程（當我們點選列印鍵時，第一個列印文件會先被列印，後續送來的文件會依序列印）或是一般作業系統的工作佇列（job queue）、I/O Buffer 緩衝區，也是透過先進先出來處理。
 
 以下是佇列（Queue）幾個特性：
@@ -21,7 +18,7 @@ author: kdchang
 4. 刪除元素時發生在 Front 前端 
 5. 新增/刪除（Enqueue/Dequeue 或 Add/Delete）元素是發生在不同端
 
-## 用陣列（Array）實作佇列（Queue）
+# 用陣列（Array）實作佇列（Queue）
 
 接下來我們將使用 JavaScript 的一維陣列來實作佇列（Queue），其基本步驟如下：
 
@@ -85,7 +82,7 @@ author: kdchang
 	}
 	```
 
-### 完整佇列（Queue）類別：
+## 完整佇列（Queue）類別：
 
 ```javascript
 function Queue() {
@@ -115,7 +112,7 @@ function Queue() {
 }
 ```
 
-### 使用 Queue 類別
+## 使用 Queue 類別
 
 ```javascript
 // 由於上面我們已經建立好了 Queue 的類別，我們這邊直接使用。亦可以瀏覽器 console 直接看結果
@@ -143,10 +140,10 @@ console.log(queue.size());
 queue.print();
 ```
 
-## 優先級佇列（Priority Queue）
+# 優先級佇列（Priority Queue）
 優先級佇列（Priority Queue）是一般佇列的修改版本，為一種不必遵守佇列特性－FIFO(先進先出)的有序串列。其規定每個元素都要有優先級，優先級最高的會最早獲得服務，若是優先級相同則看排列順序。優先佇列可以利用陣列結構及鏈結串列來實作。在生活中我們也可以看到優先級佇列（Priority Queue）的真實應用，例如：VIP 會員可以優先排隊進場、道路行駛時救護車優先於其他車輛，甚至是急救時也會有病情嚴重分類。於計算機科學領域中，CPU 工作排程也常會用到優先佇列。
 
-### 建立優先級佇列（Priority Queue）類別
+## 建立優先級佇列（Priority Queue）類別
 
 ```javascript
 function PriorityQueue() {
@@ -195,7 +192,7 @@ function PriorityQueue() {
 }
 ```
 
-### 使用優先級佇列（Priority Queue）類別
+## 使用優先級佇列（Priority Queue）類別
 
 ```javascript
 // 由於上面我們已經建立好了 PriorityQueue 的類別，我們這邊直接使用。亦可以瀏覽器 console 直接看結果
@@ -223,7 +220,7 @@ console.log(priorityQueue.size());
 priorityQueue.print();
 ```
 
-## 環狀佇列（Circular Queue）
+# 環狀佇列（Circular Queue）
 環狀佇列（Circular Queue）是指一種環形結構的佇列，它是利用一種 Q[0: N-1] 的一維陣列，同時 Q[0] 為 Q[N-1] 的下一個元素。由於一般佇列會遇到明明前端頭部尚有空間，但再加入元素時卻發現此佇列已滿。此時的解決方法就是使用環形佇列（Circular Queue）。
 
 環狀佇列（Circular Queue）特性如下：
@@ -235,7 +232,7 @@ priorityQueue.print();
 
 若再加入一個項目時，Rear 等於 0，也就是 Front 等於 Rear，如此無法分辨此時佇列是空的還是滿的。因此，環形佇列必須浪費一個空格。當 Front 等於 Rear 時，環形佇列為空的。當（Rear+1）Mod N 等於 Front 時，環形佇列為已滿，通常環狀佇列最多使用（N-1）個空間。
 
-## 總結
+# 總結
 
 在這章我們學到了：
 
