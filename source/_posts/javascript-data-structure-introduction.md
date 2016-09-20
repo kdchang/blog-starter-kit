@@ -182,5 +182,10 @@ dog.wow();
 # 延伸閱讀
 1. [用十分鐘瞭解 陳鍾誠的程式設計課 (採用JavaScript + C的原因)](http://www.slideshare.net/ccckmit/javascript-c)
 2. [You-Dont-Know-JS](https://github.com/getify/You-Dont-Know-JS)
+3. [JavaScript與前端程式設計入門自學參考](https://tw.twincl.com/javascript/*6731)
+4. [JavaScript Garden  ](http://bonsaiden.github.io/JavaScript-Garden/zhtw/)
+5. [JavaScript核心](http://weizhifeng.net/javascript-the-core.html)
+6. [[稀土掘金日报] JavaScript 开发者必备的资源合集](https://segmentfault.com/a/1190000004253577)
+7. [專為中學生寫的 JavaScript 程式書](https://www.gitbook.com/book/ccckmit/javascript/details) 
 
 （iamge via [wikimedia](https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2000px-Unofficial_JavaScript_logo_2.svg.png)）
