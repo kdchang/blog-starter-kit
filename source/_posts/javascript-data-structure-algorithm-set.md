@@ -302,6 +302,8 @@ N = {0, 1, 2, 3, 4, 5, 6, ...}
 2. 建立集合類別和方法
 3. 集合操作（聯集、交集、差集、子集）
 
+接下來我將繼續探索 Dictionary 和 Hash Table 的世界。
+
 # 延伸閱讀
 1. [MDN Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)
 
