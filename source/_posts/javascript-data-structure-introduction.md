@@ -187,5 +187,6 @@ dog.wow();
 5. [JavaScript核心](http://weizhifeng.net/javascript-the-core.html)
 6. [[稀土掘金日报] JavaScript 开发者必备的资源合集](https://segmentfault.com/a/1190000004253577)
 7. [專為中學生寫的 JavaScript 程式書](https://www.gitbook.com/book/ccckmit/javascript/details) 
+8. [nzakas/computer-science-in-javascript](https://github.com/nzakas/computer-science-in-javascript)
 
 （iamge via [wikimedia](https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2000px-Unofficial_JavaScript_logo_2.svg.png)）
