@@ -119,6 +119,54 @@ MVC 架構
 
 # Django ORM
 
+# 表單互動
+
+1. 用 HTML 刻個 form 表單
+2. 處理 HTTP POST request
+3. 驗證表單欄位內容是否正確
+4. 把確認過的資料存進 database 之中
+
+```python
+def signup(request):
+    if request.user.is_authenticated(): 
+        return HttpResponseRedirect('/')
+
+    if request.method == 'POST':
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            user = form.save()
+            return HttpResponseRedirect('/accounts/login')
+
+        return render(request, 'accounts/signup.html', locals())
+    else:
+    	form = UserCreationForm()
+    	return render(request, 'accounts/signup.html', locals())
+```
+
+```html
+{% extends 'extends/base.html' %}
+
+{% block content %}
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+	<h1>註冊新帳號</h1>
+	<form action="/contact/" method="post">
+	    {% for field in form %}
+	        <div class="fieldWrapper">
+	            {{ field.errors }}
+	            {{ field.label_tag }} {{ field }}
+	        </div>
+	    {% endfor %}
+	    {% csrf_token %}
+	    <button class="btn btn-primary" type="submit">註冊</button>
+	</form>
+</div>
+{% endblock content %}
+```
+
 # 進階 Templates 使用
 
 # 動態 URL
@@ -137,3 +185,14 @@ MVC 架構
 7. [在django項目中加入像bootstrap這样的css，js等靜態文件](http://fanli7.net/a/bianchengyuyan/C__/20140216/470245.html)
 8. [What is the naming convention in Python for variable and function names?](http://stackoverflow.com/questions/159720/what-is-the-naming-convention-in-python-for-variable-and-function-names)
 9. [how to use the href attribute in django templates](http://stackoverflow.com/questions/17200389/how-to-use-the-href-attribute-in-django-templates)
+10. [django rest framework 小小心得](http://sillygod-blog.logdown.com/posts/663369)
+11. [Beginner's Guide to the Django Rest Framework](https://code.tutsplus.com/tutorials/beginners-guide-to-the-django-rest-framework--cms-19786)
+12. [How To Use PostgreSQL with your Django Application on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your-django-application-on-ubuntu-14-04)
+13. [使用Django內建的帳號管理系統](https://yichen0831.wordpress.com/2013/02/17/%E4%BD%BF%E7%94%A8django%E5%85%A7%E5%BB%BA%E7%9A%84%E5%B8%B3%E8%99%9F%E7%AE%A1%E7%90%86%E7%B3%BB%E7%B5%B1/comment-page-1/)
+14. [uranusjr/django-tutorial-for-programmers](https://github.com/uranusjr/django-tutorial-for-programmers)
+15. [dokelung/Python-QA](https://github.com/dokelung/Python-QA)
+16. [Django筆記(10) - 用戶的登入與登出](http://dokelung-blog.logdown.com/posts/234437-django-notes-10-users-login-and-logout)
+17. [Django Tutorial](http://daikeren.github.io/django_tutorial/)
+18. [Django Packages](https://djangopackages.org/)
+19. [在 Django 中实现用 email 登录](http://guoqiao.me/post/2014/0904-login-by-email-in-django)
+
