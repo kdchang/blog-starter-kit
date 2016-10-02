@@ -167,11 +167,20 @@ def signup(request):
 {% endblock content %}
 ```
 
-# 進階 Templates 使用
+# 進階 Templates / Template Filters 使用
 
 # 動態 URL
 
 # 成果展示
+
+# Deploy 部屬到 Digital Ocean
+
+1. [How to Deploy a Django Application on DigitalOcean](https://www.codementor.io/python/tutorial/how-to-deploy-a-django-application-on-digitalocean) 
+2. [How To Use the Django One-Click Install Image](https://www.digitalocean.com/community/tutorials/how-to-use-the-django-one-click-install-image)
+3. [Django Tutorials](https://www.digitalocean.com/community/tags/django?type=tutorials)
+4. [How To Set Up Django with Postgres, Nginx, and Gunicorn on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-ubuntu-14-04)
+5. [How To Install the Django Web Framework on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-install-the-django-web-framework-on-ubuntu-16-04)
+6. [How To Deploy a Local Django App to a VPS](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-local-django-app-to-a-vps)
 
 # 總結
 
@@ -195,4 +204,10 @@ def signup(request):
 17. [Django Tutorial](http://daikeren.github.io/django_tutorial/)
 18. [Django Packages](https://djangopackages.org/)
 19. [在 Django 中实现用 email 登录](http://guoqiao.me/post/2014/0904-login-by-email-in-django)
+20. [Django Tutorial: Making Your Own Template Filters](http://www.pfinn.net/custom-django-filter-tutorial.html)
+21. [Django: 'current_tags' is not a valid tag library](http://stackoverflow.com/questions/5493776/django-current-tags-is-not-a-valid-tag-library)
+22. [Custom template tags and filters¶](https://docs.djangoproject.com/en/dev/howto/custom-template-tags/#assignment-tags)
+23. [how to use custom django templatetag with django template if statement?](http://stackoverflow.com/questions/14767516/how-to-use-custom-django-templatetag-with-django-template-if-statement)
+24. [Recommended Django Project Layout](http://www.revsys.com/blog/2014/nov/21/recommended-django-project-layout/)
+25. [How to validate Google reCAPTCHA v2 in django](http://stackoverflow.com/questions/29548574/how-to-validate-google-recaptcha-v2-in-django)
 
