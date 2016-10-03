@@ -175,12 +175,58 @@ def signup(request):
 
 # Deploy 部屬到 Digital Ocean
 
+1. adduser
+2. chmod
+
+
+```
+$ sudo apt-get update
+$ sudo apt-get upgrade
+$ sudo apt-get install python3-pip python3-dev libpq-dev postgresql postgresql-contrib nginx gunicorn
+```
+
+```
+$ sudo su - postgres
+$ psql
+$ CREATE DATABASE myproject;
+$ CREATE USER myprojectuser WITH PASSWORD 'password';
+$ GRANT ALL PRIVILEGES ON DATABASE myproject TO myprojectuser;
+$ \q
+$ exit
+```
+
+```
+$ sudo python3 -m venv myproject
+```
+
+```
+$ source myproject/bin/activate
+```
+
+```
+CREATE DATABASE myproject;
+
+CREATE USER myprojectuser WITH PASSWORD 'password';
+
+ALTER ROLE techbridge SET client_encoding TO 'utf8';
+ALTER ROLE techbridge SET default_transaction_isolation TO 'read committed';
+ALTER ROLE techbridge SET timezone TO 'UTC';
+GRANT ALL PRIVILEGES ON DATABASE myprojectuser TO myproject;
+
+```
+
+```
+bower install summernote --save
+```
+
+
 1. [How to Deploy a Django Application on DigitalOcean](https://www.codementor.io/python/tutorial/how-to-deploy-a-django-application-on-digitalocean) 
 2. [How To Use the Django One-Click Install Image](https://www.digitalocean.com/community/tutorials/how-to-use-the-django-one-click-install-image)
 3. [Django Tutorials](https://www.digitalocean.com/community/tags/django?type=tutorials)
-4. [How To Set Up Django with Postgres, Nginx, and Gunicorn on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-ubuntu-14-04)
+4. [How To Set Up Django with Postgres, Nginx, and Gunicorn on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-ubuntu-16-04)
 5. [How To Install the Django Web Framework on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-install-the-django-web-framework-on-ubuntu-16-04)
 6. [How To Deploy a Local Django App to a VPS](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-local-django-app-to-a-vps)
+7. [Initial Server Setup with Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04)
 
 # 總結
 
