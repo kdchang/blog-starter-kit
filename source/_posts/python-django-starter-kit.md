@@ -227,8 +227,11 @@ bower install summernote --save
 5. [How To Install the Django Web Framework on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-install-the-django-web-framework-on-ubuntu-16-04)
 6. [How To Deploy a Local Django App to a VPS](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-local-django-app-to-a-vps)
 7. [Initial Server Setup with Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04)
+8. [[Django|Python] 在Ubuntu上部署Django網站至nginx (2) – 透過 Gunicorn 與nginx](http://koko.ntex.tw/wordpress/djangopython-deploy-django-on-ubuntu-install-gunicorn-nginx/)
 
 # 總結
+
+1. [Securely Manage Remote PostgreSQL Servers with pgAdmin on Mac OS X](https://www.linode.com/docs/databases/postgresql/securely-manage-remote-postgresql-servers-with-pgadmin-on-macos-x)
 
 # 延伸閱讀
 1. [Django 官網](https://www.djangoproject.com/)
@@ -256,4 +259,5 @@ bower install summernote --save
 23. [how to use custom django templatetag with django template if statement?](http://stackoverflow.com/questions/14767516/how-to-use-custom-django-templatetag-with-django-template-if-statement)
 24. [Recommended Django Project Layout](http://www.revsys.com/blog/2014/nov/21/recommended-django-project-layout/)
 25. [How to validate Google reCAPTCHA v2 in django](http://stackoverflow.com/questions/29548574/how-to-validate-google-recaptcha-v2-in-django)
+26. [django——如何解决500 - Internal server error.](http://hustpawpaw.blog.163.com/blog/static/184228324201210610331329/)
 
