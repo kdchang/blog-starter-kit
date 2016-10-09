@@ -4,9 +4,11 @@ date: 2016-06-11 22:00:00
 tags: Python, Django, Mvc, Web, MTV, Web Backend, Web Framework, 教學 
 author: kdchang
 ---
+
 # 什麼是 Python？
 
 # 什麼是 Django？
+[Django](https://www.djangoproject.com/) 是一個使用 Python 開發 Web 的應用程式框架（Frameowork）， Django 屬於一種大而全的 MVC 框架（），讓開發 Web 應用程式可以
 
 # 環境建置與設定
 
@@ -219,6 +221,9 @@ GRANT ALL PRIVILEGES ON DATABASE myprojectuser TO myproject;
 bower install summernote --save
 ```
 
+```
+sudo supervisord -c /etc/supervisor/supervisord.conf
+```
 
 1. [How to Deploy a Django Application on DigitalOcean](https://www.codementor.io/python/tutorial/how-to-deploy-a-django-application-on-digitalocean) 
 2. [How To Use the Django One-Click Install Image](https://www.digitalocean.com/community/tutorials/how-to-use-the-django-one-click-install-image)
@@ -228,9 +233,9 @@ bower install summernote --save
 6. [How To Deploy a Local Django App to a VPS](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-local-django-app-to-a-vps)
 7. [Initial Server Setup with Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04)
 8. [[Django|Python] 在Ubuntu上部署Django網站至nginx (2) – 透過 Gunicorn 與nginx](http://koko.ntex.tw/wordpress/djangopython-deploy-django-on-ubuntu-install-gunicorn-nginx/)
+9. [Django的部署:Nginx+Gunicorn+virtualenv+supervisor+PostgreSQL](http://www.jianshu.com/p/288ebe5396a0)
 
 # 總結
-
 1. [Securely Manage Remote PostgreSQL Servers with pgAdmin on Mac OS X](https://www.linode.com/docs/databases/postgresql/securely-manage-remote-postgresql-servers-with-pgadmin-on-macos-x)
 
 # 延伸閱讀
