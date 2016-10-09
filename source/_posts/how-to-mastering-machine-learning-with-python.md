@@ -66,7 +66,6 @@ author: kdchang
 	- matplotlib：會製圖瞟
 	- scikit-learn：機器學習工具
 
-
 4. 使用 scikit-learn 學習 Python 機器學習應用
 
 	- [Machine Learning: Python 機器學習：使­用Pytho­n](https://www.gitbook.com/book/htygithub/machine-learning-python)
