@@ -91,6 +91,7 @@ author: kdchang
 	- [NTU Applied Deep Learning](https://www.csie.ntu.edu.tw/~yvchen/f105-adl/index.html)
 	- [Stanford Deep Learning](http://deeplearning.stanford.edu/tutorial/)
 	- [深度學習(Deep Learning)自學素材推薦](https://dt42.github.io/2016/04/27/deep-learning-material-recommendations/)
+	- [深度學習 Deep Learning：中文學習資源整理](http://www.jerrynest.com/deep-learning-resource/)
 
 # 總結
 以上整理了一些機器學習網路學習資源，若你累積一些小小經驗後，不妨挑戰一下 [Kaggle](https://www.kaggle.com/) 測試一下自己的實力並累積更多數據分析的經驗。
@@ -102,11 +103,10 @@ author: kdchang
 4. [台灣資料科學年會](http://datasci.tw/)
 5. [「2016 台灣資料科學愛好者年會」精彩資料總整理(持續更新中)](http://dataology.blogspot.tw/)
 6. [大數據會消失，資料科學不會！你該知道的資料科學第一堂課](http://www.bnext.com.tw/article/view/id/40220)
-7. [深度學習 Deep Learning：中文學習資源整理](http://www.jerrynest.com/deep-learning-resource/)
-8. [如何選擇 Microsoft Azure Machine Learning 的演算法](https://azure.microsoft.com/zh-tw/documentation/articles/machine-learning-algorithm-choice/)
-9. [Microsoft Azure Machine Learning 機器學習服務文件](https://azure.microsoft.com/zh-tw/documentation/services/machine-learning/)
-10. [Kdnuggets](http://www.kdnuggets.com/)
-11. [Bigdatafinance](http://www.bigdatafinance.tw/)
-12. [Using Python and R together: 3 main approaches](http://www.kdnuggets.com/2015/12/using-python-r-together.html)
-13. [机器学习最佳入门学习资源](http://blog.csdn.net/shadow_mi/article/details/51829389)
-14. [机器学习(Machine Learning)&深度学习(Deep Learning)资料(Chapter 1)](https://github.com/ty4z2008/Qix/blob/master/dl.md)
+7. [如何選擇 Microsoft Azure Machine Learning 的演算法](https://azure.microsoft.com/zh-tw/documentation/articles/machine-learning-algorithm-choice/)
+8. [Microsoft Azure Machine Learning 機器學習服務文件](https://azure.microsoft.com/zh-tw/documentation/services/machine-learning/)
+9. [Kdnuggets](http://www.kdnuggets.com/)
+10. [Bigdatafinance](http://www.bigdatafinance.tw/)
+11. [Using Python and R together: 3 main approaches](http://www.kdnuggets.com/2015/12/using-python-r-together.html)
+12. [机器学习最佳入门学习资源](http://blog.csdn.net/shadow_mi/article/details/51829389)
+13. [机器学习(Machine Learning)&深度学习(Deep Learning)资料(Chapter 1)](https://github.com/ty4z2008/Qix/blob/master/dl.md)
