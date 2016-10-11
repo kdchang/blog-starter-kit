@@ -1,7 +1,7 @@
 ---
 title: 如何使用 Python 學習機器學習（Machine Learning）
 date: 2016-010-09 09:54:49
-tags: Python, Machine Learning, 機器學習, AI, Artificial Intelligence, NLP, Data Mining
+tags: Python, Machine Learning, 機器學習, AI, Artificial Intelligence, NLP, Data Mining, 人工智慧, 監督式學習, Supervised learning
 author: kdchang
 ---
 
