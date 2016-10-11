@@ -4,6 +4,7 @@ date: 2016-10-11 09:54:49
 tags: LESS, SASS, SCSS, Sass, PossCSS, CSS, OOCSS, CSS in JS, CSS Modules
 author: kdchang
 ---
+
 ![Sass/SCSS 簡明入門教學](sass.png)
 
 # Sass/SCSS 簡介
@@ -238,6 +239,8 @@ sass main.scss main.css
 
 	還有種情況是參數傳入當作字串（String interpolation）：
 
+	轉譯前：
+
 	```scss
 	// 使用 #{$file} 接收
 	@mixin photo-content($file) {
@@ -251,6 +254,8 @@ sass main.scss main.css
 	  margin: 0px auto; 
 	}
 	```
+
+	轉譯後：
 
 	```css
 	.photo { 
@@ -274,9 +279,7 @@ sass main.scss main.css
    	}
 	```
 
-4. Placeholders
-
-5. Functions 
+4. Functions 
 
 	在 Sass 內建一些好用 functions 可以簡單設定色相、漸層，例如：`adjust-hue($color, $degrees)`、`fade-out`：
 
@@ -286,7 +289,7 @@ sass main.scss main.css
 
 	更多內建 Functions 可以[參考這邊](http://sass-lang.com/documentation/Sass/Script/Functions.html)
 
-6. Operations：透過加減乘除和取餘數等運算子可以方便運算所需的屬性值
+5. Operations：透過加減乘除和取餘數等運算子可以方便運算所需的屬性值
 
 	顏色加法：
 
@@ -332,14 +335,14 @@ sass main.scss main.css
 	}
 	```
 
-7. @include 引用：可以引入其他 Sass、SCSS 檔案：
+6. @include 引用：可以引入其他 Sass、SCSS 檔案：
 	
 	我們通常使用 `Partials` 去處理特定功能，方便管理和維護。以下是引用 `_variables.scss` 檔案範例，其中檔名前的 `_` 表示引用前要先 compile：
 
 	```scss
   	@import "variables";
 	```
-8. @extend 共用：
+7. @extend 共用：
 	
 	編譯前：
 
@@ -396,8 +399,8 @@ sass main.scss main.css
   		//more rules
 	}
 	```
-	
-	9. @mixin 和 @extend 比較
+
+8. `@mixin` 和 `@extend` 比較
 
 	轉譯前：
 
@@ -475,8 +478,13 @@ sass main.scss main.css
 	```
 
 # 總結
-以上就是 Sass/SASS 簡明入門教學，事實上，有些人覺得使用 preprocessor 較好維護，有些人認為每次都要編譯很麻煩，至於要選擇哪一種 CSS preprocessor 或是根本不使用，取決於團隊的內部規範和討論。
+以上就是 Sass/SCSS 簡明入門教學，在這篇文章中我們大致上介紹了 Sass 使用語法。除了 Sass 外，目前市面上還有許多 CSS 的變形，包括語法較易學的 [LESS](http://lesscss.org/#)、元件化思考的 CSS in JS、主要解決全域問題和模組引用的 [CSS Modules](https://github.com/css-modules/css-modules)，取經於 JavaScript Task Runner 的 [PostCSS](https://github.com/postcss/postcss) 等，這些最終都是要解決傳統 CSS 維護不易、重用性低下等問題。事實上，有些人覺得使用 preprocessor 較好維護，有些人認為每次都要編譯很麻煩，至於要選擇哪一種 CSS preprocessor 或是根本不使用，取決於團隊的內部規範和討論。俗話說後端一天，前端一年，說不定現在選邊站的技術，下個月就不流行了呢。
 
 # 延伸閱讀
 1. [Sass & Susy教學手冊](http://sam0512.blogspot.tw/2013/10/sass.html)
-
+2. [learn-sass](https://www.codecademy.com/learn/learn-sass)
+3. [CSS Modules 用法教程](http://www.ruanyifeng.com/blog/2016/06/css_modules.html)
+4. [如何從 SASS 無痛轉移到 POSTCSS](http://blog.hellojcc.tw/2015/12/11/sass-to-postcss/)
+5. [Using PostCSS Together with Sass, Stylus, or LESS](https://webdesign.tutsplus.com/tutorials/using-postcss-together-with-sass-stylus-or-less--cms-24591)
+6. [[心得] 什麼是 postcss?](http://huli.logdown.com/posts/262723-experiences-what-is-postcss)
+7. [聊聊 CSS 預處理器，LESS、Sass、Stylus 及 postCSS](http://solidzoro.com/blog/article/2015/09/talk-about-css-preprocessor.html)
