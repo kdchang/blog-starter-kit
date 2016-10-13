@@ -478,7 +478,7 @@ sass main.scss main.css
 	```
 
 # 總結
-以上就是 Sass/SCSS 簡明入門教學，在這篇文章中我們大致上介紹了 Sass 使用語法。除了 Sass 外，目前市面上還有許多 CSS 的變形，包括語法較易學的 [LESS](http://lesscss.org/#)、元件化思考的 CSS in JS、主要解決全域問題和模組引用的 [CSS Modules](https://github.com/css-modules/css-modules)，取經於 JavaScript Task Runner 的 [PostCSS](https://github.com/postcss/postcss) 等，這些最終都是要解決傳統 CSS 維護不易、重用性低下等問題。事實上，有些人覺得使用 preprocessor 較好維護，有些人認為每次都要編譯很麻煩，至於要選擇哪一種 CSS preprocessor 或是根本不使用，取決於團隊的內部規範和討論。俗話說後端一天，前端一年，說不定現在選邊站的技術，下個月就不流行了呢。
+以上就是 Sass/SCSS 簡明入門教學，在這篇文章中我們大致上介紹了 Sass 使用語法。除了 Sass 外，目前市面上還有許多 CSS 的變形，包括語法較易學的 [LESS](http://lesscss.org/#)、元件化思考的 CSS in JS、主要解決全域問題和模組引用的 [CSS Modules](https://github.com/css-modules/css-modules)，取經於 JavaScript Task Runner 的 [PostCSS](https://github.com/postcss/postcss) 、網格樣式表單 [GSS](https://gridstylesheets.org/) 等，這些最終都是要解決傳統 CSS 維護不易、重用性低下等問題。事實上，有些人覺得使用 preprocessor 較好維護，有些人認為每次都要編譯很麻煩，至於要選擇哪一種 CSS preprocessor 或是根本不使用，取決於團隊的內部規範和討論。俗話說後端一天，前端一年，說不定現在選邊站的技術，下個月就不流行了呢。
 
 # 延伸閱讀
 1. [Sass & Susy教學手冊](http://sam0512.blogspot.tw/2013/10/sass.html)
