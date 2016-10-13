@@ -1,5 +1,5 @@
 ---
-title: 如何打造自己的 jQuery Plugin
+title: 如何打造自己的 jQuery Plugin 入門教學
 date: 2016-010-1 09:54:49
 tags: Plugin, jQuery, JavaScript, 外掛, 教學
 author: kdchang
