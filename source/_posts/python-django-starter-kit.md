@@ -1,15 +1,18 @@
 ---
 title: Python Django 快速入門教學：打造食譜分享社群網站
 date: 2016-06-11 22:00:00
-tags: Python, Django, Mvc, Web, MTV, Web Backend, Web Framework, 教學 
+tags: Python, Django, MVC, Web, MTV, Web Backend, Web Framework, 教學, Flask, 框架 
 author: kdchang
 ---
 
 # 什麼是 Python？
+[Python](https://zh.wikipedia.org/wiki/Python) 是一種物件導向、直譯式的跨平台電腦程式語言，它包含了一組功能完備的標準庫和豐富套件生態系，可以輕鬆完成很多常見的任務（例如：讀寫檔案、自然語言處理、網路爬蟲、網站開發、機器學習等），因為它可以很輕易整合其他底層語言，所以又稱為膠水語言。它的語法簡單，與其它大多數程式設計語言使用大括弧不一樣，它使用縮進來定義語句塊。由於具備簡潔易學等特性，許多開發者推薦 Python 為初學者第一個學習的程式語言。由於版本更迭，我們接下來討論的主要是以 Python3 為主，若電腦沒有安裝的話，你可以在[官方網站下載](https://www.python.org/)。
 
 # 什麼是 Django？
-[Django](https://www.djangoproject.com/) 是一個使用 Python 開發 Web 的應用程式框架（Frameowork）， Django 屬於一種大而全的 MVC 框架（），讓開發 Web 應用程式可以
+[Django](https://www.djangoproject.com/) 是一個使用 Python 開發 Web 的應用程式框架（Frameowork），相對於 [Flask](http://flask.pocoo.org/) 這種 micro-framework，Django 屬於一種大而全的 MVC 框架（實際上是 MTV），讓開發 Web 應用程式可以快速打造網路應用程式，而不用重複造輪子。
 
+簡單來說像 Django 這類的 Web Frameowork，就是幫你把大部分的程式架構都建構好，等你填你需要的應用邏輯進去。Framework 會負責在合適的時機呼叫你寫的程式，而不是讓你自行呼叫合適的函式（function），以搭建程式本身。
+ 
 # 環境建置與設定
 
 ```
@@ -109,7 +112,6 @@ $ deactivate
 	```
 
 # 是 MVC？ 還是 MTV？
-MVC 架構
 
 # Views and URLconfs
 
@@ -180,12 +182,15 @@ def signup(request):
 1. adduser
 2. chmod
 
+安裝相關套件：
 
 ```
 $ sudo apt-get update
 $ sudo apt-get upgrade
 $ sudo apt-get install python3-pip python3-dev libpq-dev postgresql postgresql-contrib nginx gunicorn
 ```
+
+設定 postgresql：
 
 ```
 $ sudo su - postgres
@@ -197,13 +202,7 @@ $ \q
 $ exit
 ```
 
-```
-$ sudo python3 -m venv myproject
-```
-
-```
-$ source myproject/bin/activate
-```
+設定資料庫：
 
 ```
 CREATE DATABASE myproject;
@@ -215,14 +214,6 @@ ALTER ROLE techbridge SET default_transaction_isolation TO 'read committed';
 ALTER ROLE techbridge SET timezone TO 'UTC';
 GRANT ALL PRIVILEGES ON DATABASE myprojectuser TO myproject;
 
-```
-
-```
-bower install summernote --save
-```
-
-```
-sudo supervisord -c /etc/supervisor/supervisord.conf
 ```
 
 1. [How to Deploy a Django Application on DigitalOcean](https://www.codementor.io/python/tutorial/how-to-deploy-a-django-application-on-digitalocean) 
@@ -252,7 +243,7 @@ sudo supervisord -c /etc/supervisor/supervisord.conf
 11. [Beginner's Guide to the Django Rest Framework](https://code.tutsplus.com/tutorials/beginners-guide-to-the-django-rest-framework--cms-19786)
 12. [How To Use PostgreSQL with your Django Application on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your-django-application-on-ubuntu-14-04)
 13. [使用Django內建的帳號管理系統](https://yichen0831.wordpress.com/2013/02/17/%E4%BD%BF%E7%94%A8django%E5%85%A7%E5%BB%BA%E7%9A%84%E5%B8%B3%E8%99%9F%E7%AE%A1%E7%90%86%E7%B3%BB%E7%B5%B1/comment-page-1/)
-14. [uranusjr/django-tutorial-for-programmers](https://github.com/uranusjr/django-tutorial-for-programmers)
+14. [uranusjr/django-tutorial-for-programmers 教學](https://github.com/uranusjr/django-tutorial-for-programmers)
 15. [dokelung/Python-QA](https://github.com/dokelung/Python-QA)
 16. [Django筆記(10) - 用戶的登入與登出](http://dokelung-blog.logdown.com/posts/234437-django-notes-10-users-login-and-logout)
 17. [Django Tutorial](http://daikeren.github.io/django_tutorial/)
