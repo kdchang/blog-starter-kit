@@ -61,8 +61,8 @@ sass main.scss main.css
 
 	```scss
 	$translucent-white: rgba(255,255,255,0.3);
-	background-color: {
-		$translucent-white;
+	p {
+		background-color: $translucent-white;
 	}
 	```
 
@@ -72,9 +72,8 @@ sass main.scss main.css
 	$font-style-2: Helvetica, Arial, sans-serif;
 	$standard-border: 4px solid black;
 
-	border : {
-		top: $standard-border;
-	    bottom: $standard-border:;
+	p {
+		border: $standard-border;
 	}
 
 	// maps key:value
