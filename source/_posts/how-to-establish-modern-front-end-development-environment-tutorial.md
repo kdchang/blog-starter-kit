@@ -19,11 +19,15 @@ author: kdchang
 	- 編輯器（Editor）
 	在開始建置前端開發環境之前我們需要先準備一下我們的編輯器、終端機、瀏覽器。雖然前端工程的核心技術：`HTML`、`CSS`、`JavaScript` 可以使用一般筆記本就可以編輯，不過我們通常會使用專門的編輯器來提高自己的開發效率。在市面上有很多可以使用的編輯器（例如：Sublime Text、Atom、Vim、Emacs、NodePad++，甚至更為完整的整合開發環境 WebStorm），沒有最好的編輯器，主要還是以個人習慣為主。本文將以 Sublime Text 當做範例（Sublime Text 優勢在於輕量和具備多元外掛生態系）。
 
+	延伸閱讀：
+	[Sublime Text 3 新手上路：必要的安裝、設定與基本使用教學](http://blog.miniasp.com/post/2014/01/06/Useful-tool-Sublime-Text-3-Quick-Start.aspx)
+	[《Sublime Text外掛》Emmet&HTML Boilerplate二隻外掛，讓你快速產生HTML5網頁範本](https://www.minwt.com/webdesign-dev/html/10493.html)
+
 	- 終端機（Terminal）
 	由於在安裝開發工具、管理測試用 server、版本控制甚至是套件管理等情境我們會需要在終端機進行指令列操作（command line）。在 Mac OS 和 Linux 當中都有內建的好用終端機，而且又與 Unix-like 的作業系統相容，很多指令都可以共用，比起 Windows 的命令提示字元 ( Command Prompt ) 或 PowerShell 來的方便許多，建議若有意往程式設計發展的讀者可以準備好這兩種開發環境。若讀者使用的是 Windows 系統則可以下載 [Cmder](http://cmder.net/) 或 [Cygwin](https://www.cygwin.com/) 工具，就可以讓 Windows 也可以使用 Linux 終端機指令（參考文章：[介紹好用工具：Cmder ( 具有 Linux 溫度的 Windows 命令提示字元工具 )](http://blog.miniasp.com/post/2015/09/27/Useful-tool-Cmder.aspx) 和 [[分享] Cygwin 入門 - BASH on Windows [論壇 - Ubuntu 程式設計]](https://www.ubuntu-tw.org/modules/newbb/viewtopic.php?topic_id=47282) ）。 
 
 	- 瀏覽器（Browser）
-	瀏覽器是前端工程技術很重要的宿主（host），也是程式運行和使用者互動的地方。隨著瀏覽器技術發展，前端工程師必須面對跨平台、跨瀏覽器的議題，其中Firefox、Chrome、Opera、Safari、IE 是最常見的主流瀏覽器。在開發上我們通常會使用 Chrome 瀏覽器中的開發者工具或是 Firefox 搭配 Firebug 進行測試，所以善用開發者工具可以幫助開發者除錯。在 Mac 系統使用 `Ctrl + Command + i`，在 Windows 則是使用 `F12` 開啟開發者工具。
+	瀏覽器是前端工程技術很重要的宿主（host），也是程式運行和使用者互動的地方。隨著瀏覽器技術發展，前端工程師必須面對跨平台、跨瀏覽器的議題，其中Firefox、Chrome、Opera、Safari、IE 是最常見的主流瀏覽器。在開發上我們通常會使用 Chrome 瀏覽器中的開發者工具或是 Firefox 搭配 Firebug 進行測試，所以善用開發者工具可以幫助開發者除錯。在 Mac 系統使用 `Alt + Command + i`，在 Windows 則是使用 `F12` 開啟開發者工具。
 
 1. JavaScript/ES6/Babel/TypeScript
 	- JavaScript
@@ -472,7 +476,7 @@ $ cd frontend-starter-kit
 $ npm install & bowe install
 ```
 
-啟動 gulp 任務的測試伺服器，	打開瀏覽器輸入網址 `localhost:7777` 若正確的話會看到成果！
+啟動 gulp 任務的測試伺服器，	打開瀏覽器輸入網址 `localhost:7777` 若正確的話會看到成果！當然你也可以在 `package.json` 設定指令快捷鍵：
 
 ```
 $ gulp
