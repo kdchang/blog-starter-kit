@@ -476,10 +476,21 @@ $ cd frontend-starter-kit
 $ npm install & bowe install
 ```
 
-啟動 gulp 任務的測試伺服器，	打開瀏覽器輸入網址 `localhost:7777` 若正確的話會看到成果！當然你也可以在 `package.json` 設定指令快捷鍵：
+啟動 gulp 任務的測試伺服器，	打開瀏覽器輸入網址 `localhost:7777` 若正確的話會看到成果！
 
 ```
 $ gulp
+```
+
+當然你也可以在 `package.json` 設定指令快捷鍵：
+
+```
+{
+	"scripts": {
+		"start": "gulp", 
+		"build": "gulp build" 
+	}
+}
 ```
 
 # 延伸閱讀
