@@ -65,7 +65,7 @@ author: kdchang
 	- NPM
 	NPM 是前端技術快速發展中蠻重要的一個工具，它的全名是 Node Package Manager，是 NodeJS 預設的套件管理工具，其採用 CommonJS 的模組化規範，每一個文件都是一個模組，作用域僅限於該文件，透過 `module.exports` 和 `require('模組名稱')` 當做模組使用方式，且為模組使用上為同步執行。
 	
-	使用指令建立 `package.json` 設定檔（手動建立也可以）：
+	使用指令建立 `package.json` 設定檔（在 Sublime 手動建立也可以）：
 
 	```
 	$ npm init 
@@ -90,7 +90,7 @@ author: kdchang
 3. Bower
 	常用於前端套件管理，功能和 NPM 類似，但由於它不會像 NPM 一樣重複引入不同版本的依賴套件，所以相對輕量，所以常使用於前端套件管理中。
 
-	使用指令建立 `bower.json` 設定檔（手動建立也可以）：
+	使用指令建立 `bower.json` 設定檔（在 Sublime 手動建立也可以）：
 
 	```
 	$ bower init 
@@ -207,7 +207,7 @@ author: kdchang
 	$ cd frontend-starter-kit
 	```
 
-	建立 NPM 設定檔 `package.json`（也可以手動建立）：
+	建立 NPM 設定檔 `package.json`（也可以在 Sublime 手動建立）：
 
 	```
 	$ npm init
@@ -274,10 +274,11 @@ author: kdchang
 	}
 	```
 
-	手動建立 `.bowerrc`，這樣套件會裝在 `dist/bower_components/`：
+	在 Sublime 手動建立 `.bowerrc`，這樣套件會裝在 `dist/bower_components/`：
 
 	```
 	{
+	  // 這邊設定安裝的位置
 	  "directory": "dist/bower_components/",
 	  "timeout": 120000,
 	  "registry": {
@@ -336,7 +337,7 @@ author: kdchang
 	</html>
 	```
 
-	建立 CSS 檔案（`src/styles/main.css`）：
+	建立 SCSS 檔案，之後會轉譯成 CSS（`src/styles/main.scss`）：
 
 	```css
 	h1 {
@@ -485,7 +486,7 @@ $ gulp
 當然你也可以在 `package.json` 設定指令快捷鍵：
 
 ```
-{
+{ 
 	"scripts": {
 		"start": "gulp", 
 		"build": "gulp build" 
