@@ -278,7 +278,7 @@ author: kdchang
 
 	```
 	{
-	  // 這邊設定安裝的位置
+	  // 這邊設定想安裝的位置，若沒設定 .bowerrc 則會安裝在 root 資料夾下
 	  "directory": "dist/bower_components/",
 	  "timeout": 120000,
 	  "registry": {

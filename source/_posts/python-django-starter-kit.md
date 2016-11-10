@@ -16,8 +16,21 @@ author: kdchang
 # 環境建置與設定
 
 ```
+$ brew install python3
+```
+
+```
+$ sudo pip3 install virtualenv
+```
+
+```
+$ mkdir opencook
+$ cd opencook
+```
+
+```
 // -m 代表執行模組或函式庫 
-$ python3 -m venv opencook_venv
+$ virtualenv -p python3 opencook_venv
 ```
 
 ```
@@ -112,16 +125,22 @@ $ deactivate
 	```
 
 # 是 MVC？ 還是 MTV？
+現在許多的 Web 框架多半標榜是 MVC 框架，由 Model 負責資料層，View 負責視覺，Controller 負責商業邏輯的部份。雖然 Django 也是類似於 MVC 大而全的框架，但嚴格來說我們會把 Django 視為 MTV，也就是 Model、View、Template，在 Django 中 View 類似於 Controller 功能，而 Template 則處理 View 視覺部分。
 
 # Views and URLconfs
+在 Django 中會透過正規表達式來處理 URL Match Routing 的部份，並透過 Views 載入對應的處理函數。
 
 # Templates
+在 Django 中 Templates 類似於 MVC 中的 View，主要負責使用者介面。
 
 # Models
+與大部分 MVC 框架差不多，在 Django 中 Model 主要是處理資料層的資料。
 
 # Admin
+Django 有一個比較方便的功能就是內建的 Admin，可以讓你簡單就建立一個可以管理後台的系統，在一般情況下通常堪用了。
 
 # Django ORM
+ORM 的全名是 Object-Relational Mapping，係指將關聯式資料庫映射至物件導向的資料抽象化技術，可以讓你比較方便的去操作資料庫，當然如果是複雜關聯式資料庫操作還是要使用到 SQL 語法。
 
 # 表單互動
 
