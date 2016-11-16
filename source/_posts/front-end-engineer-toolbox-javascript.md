@@ -6,7 +6,7 @@ author: kdchang
 ---
 
 # 前言 
-事實上，要成為一個好的前端軟體工程師除了必須對於前端工程（Web 效能、build 工具、CSS layout 引擎）的部份有所了解外，也必須對於電腦科學的基礎知識有著堅實的基礎知識（資料結構、演算法、設計模式等）。在這系列的第一篇我們將來探討 JavaScript。
+事實上，要成為一個好的前端軟體工程師除了必須對於前端工程（Web 效能、build 工具、CSS layout 引擎）的部份有所了解外，也必須對於電腦科學的基礎知識有著堅實的基礎知識（資料結構、演算法、設計模式等）。接下來我們將來探討 JavaScript。
 
 # JavaScript 前世今身
 Java 和 JavaScript 雖然名稱相似，但卻是熱狗和狗的差別。JavaScript 是由 Netscape 工程師 Brendan Eich 於 1995 年僅花 10 天所設計的程式語言。JavaScript 是一種直譯式、基於原型（prototype based）的物件導向程式語言，但又具有函數式程式設計（Functional programming）的特性。其具備簡單好上手、應用範圍廣泛，容易有成就感，但精通不易等特性。過去一段時間 JavaScript 一直被認為是玩具語言，難登大雅之堂。但隨著版本的演進，再加上 NodeJS 的出現，讓 JavaScript 由黑翻紅成為程式語言的當紅巨星，目前雄據在程式語言排行榜前幾名，除了網頁開發外，在許多的領域都可以看到 JavaScript 的身影。

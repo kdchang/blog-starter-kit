@@ -241,7 +241,7 @@ author: kdchang
 	}
 	```
 
-	建立 Bower 設定檔案 `bower.json`（也可以手動建立）：
+	建立 Bower 設定檔案 `bower.json`（也可以手動在 Sublime 開新檔案建立）：
 
 	```
 	$ bower init
@@ -457,7 +457,7 @@ author: kdchang
 	![一看就懂得的前端開發環境建置入門教學](demo.png)
 
 # 總結
-以上就是前端開發環境建置入門教學，建議讀者可以跟著以上步驟自己實際動手建置前端開發環境。[原始碼放置](https://github.com/kdchang/frontend-starter-kit)在 Github 上，若您尚未安裝 Git，可以[參考 Git 教學](https://git-scm.com/book/zh-tw/v1/%E9%96%8B%E5%A7%8B-%E5%AE%89%E8%A3%9DGit) 安裝。
+以上就是前端開發環境建置入門教學，建議讀者可以跟著以上步驟自己實際動手建置前端開發環境。[原始碼放置](https://github.com/kdchang/frontend-starter-kit)在 Github 上，若您尚未安裝 Git，可以[參考 Git 教學](https://git-scm.com/book/zh-tw/v1/%E9%96%8B%E5%A7%8B-%E5%AE%89%E8%A3%9DGit) 安裝（或是直接在綠色按鈕上點選下載 .zip 檔案，移動到該資料夾進行操作）。
 
 安裝成功後可以透過 git 指令到 Github 下載：
 
@@ -474,7 +474,7 @@ $ cd frontend-starter-kit
 安裝套件：
 
 ```
-$ npm install & bowe install
+$ npm install & bower install
 ```
 
 啟動 gulp 任務的測試伺服器，	打開瀏覽器輸入網址 `localhost:7777` 若正確的話會看到成果！
