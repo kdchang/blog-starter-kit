@@ -1,5 +1,5 @@
 ---
-title: 前端軟體工程工具箱： Algorithm 篇
+title: 前端軟體工程工具箱：Algorithm 篇
 date: 2016-10-08 23:00:00
 tags: JavaScript, HTML, CSS, Front End, Front End Development, F2E, Front End Engineer, Data Structure, 資料結構, Algorithm, 演算法
 author: kdchang
