@@ -120,18 +120,21 @@ NoSQL 資料庫相關命名方式（主要依團隊共識）：
 
 	```sql
 	CREATE TABLE users
-	(name char(50),
-	email char(50),
-	age Int(50),
-	salary Int(50));
+	(id BIGINT(7) NOT NULL AUTO_INCREMENT,
+	name CHAR(50),
+	email CHAR(50),
+	age INT(50),
+	course_id INT(50),
+	salary INT(50));
 	```
 
 	實際使用，建立一個名為 courses 資料表：
 
 	```sql
 	CREATE TABLE courses
-	(name char(50),
-	point int(50));
+	(id BIGINT(7) NOT NULL AUTO_INCREMENT,
+	name CHAR(50),
+	point INT(50));
 	```
 
 2. 新增（INSERT）

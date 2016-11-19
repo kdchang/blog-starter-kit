@@ -5,7 +5,7 @@ tags: Pytho, PHP, Back End, Back End Development, Back End Engineer, Web, TCP, H
 author: kdchang
 ---
 # 前言
-事實上，要成為一個好的後端軟體工程師除了必須對於後端工程的程式語言的部份有所了解外，也需要了解系統設計的原理和伺服器規劃（Server 規劃、Load Balance、後端框架、TCP/IP/UDP 網路通訊協定、HTTP 超文字傳輸協定、設計模式、資料庫操作、SQL/ORM、資訊安全、性能優化等）。接下來我們將來探討常見的網路通訊協定相關議題。
+事實上，要成為一個好的後端軟體工程師除了必須對於後端工程的程式語言的部份有所了解外，也需要了解系統設計的原理和伺服器規劃（Server 規劃、Load Balance、Memory Cache、DB Scaling、Cloud Server、後端框架、TCP/IP/UDP 網路通訊協定、HTTP 超文字傳輸協定、設計模式、資料庫操作、SQL/ORM、資訊安全、性能優化等）。接下來我們將來探討資料庫/SQL/ORM 相關議題。
 
 ![後端軟體工程工具箱： 網路通訊協定篇 ](tcp-ip.png) 
 
