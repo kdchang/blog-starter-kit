@@ -101,7 +101,7 @@ NoSQL 資料庫相關命名方式（主要依團隊共識）：
 	CREATE DATABASE database_name;
 	```
 
-	實際使用，建立一個名為 `DrCourse` 的資料表：
+	實際使用，建立一個名為 `dr_course` 的資料庫：
 
 	```sql
 	CREATE DATABASE dr_course;
@@ -116,7 +116,7 @@ NoSQL 資料庫相關命名方式（主要依團隊共識）：
 	... );
 	```
 
-	實際使用，建立一個名為 users 的資料表：
+	實際使用，建立一個名為 `users` 的資料表：
 
 	```sql
 	CREATE TABLE users
@@ -128,7 +128,7 @@ NoSQL 資料庫相關命名方式（主要依團隊共識）：
 	salary INT(50));
 	```
 
-	實際使用，建立一個名為 courses 資料表：
+	實際使用，建立一個名為 `courses` 資料表：
 
 	```sql
 	CREATE TABLE courses
@@ -350,7 +350,7 @@ function get_foo (int userid) {
 Amazon DynamoDB 是一種快速靈活的 NoSQL 雲端資料庫服務，適合所有需要一致性且延遲低於 10 毫秒規模應用程式。它是全受管的雲端資料庫，支援文件和鍵值存放模型。
 
 # 總結
-以上介紹了後端軟體工程工具箱：網路通訊協定相關議題篇，在接下來的章
+以上介紹了後端軟體工程工具箱：資料庫/SQL/ORM 相關議題，在接下來的章
 節中我們將為大家打開後端工程的工具箱，介紹那些必須掌握的後端軟體工程知識。
 
 # 延伸閱讀
