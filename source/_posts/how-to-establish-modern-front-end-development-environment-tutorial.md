@@ -438,6 +438,8 @@ author: kdchang
 	gulp.task('watch', function () {
 	  gulp.watch(stylesPaths.src, ['styles']);
 	  gulp.watch(scriptsPaths.src, ['scripts']);
+	  gulp.watch(imagesPaths.src, ['images']);
+	  gulp.watch(htmlPaths.src, ['copy-html']);
 	});
 
 	// 兩種任務類型，第一種會啟動 server

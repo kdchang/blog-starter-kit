@@ -5,7 +5,7 @@ tags: Python, Django, MVC, Web, MTV, Web Backend, Web Framework, 教學, Flask, 
 author: kdchang
 ---
 
-![Python 101 快速入門教學 ](python.png) 
+![Python 101 快速入門教學 ](python-logo.png) 
 
 # 什麼是 Python？
 [Python](https://zh.wikipedia.org/wiki/Python) 是一種物件導向、直譯式的跨平台電腦程式語言，它包含了一組功能完備的標準庫和豐富套件生態系，可以輕鬆完成很多常見的任務（例如：讀寫檔案、自然語言處理、網路爬蟲、網站開發、機器學習等），因為它可以很輕易整合其他底層語言，所以又稱為膠水語言。它的語法簡單，與其它大多數程式設計語言使用大括弧不一樣，它使用縮進來定義語句塊。由於具備簡潔易學等特性，許多開發者推薦 Python 為初學者第一個學習的程式語言。由於版本更迭，我們接下來討論的主要是以 Python3 為主，若電腦沒有安裝的話，你可以在[官方網站下載](https://www.python.org/)，若你不是安裝 [Anaconda](https://www.continuum.io/downloads) 這個 all-in-one 版本的話（自帶許多套件和科學運算工具），記得要安裝 [pip](https://pypi.python.org/pypi/pip)、[IPython](https://ipython.org/)。 
@@ -81,7 +81,7 @@ my_counter = Counter()
 ```
 
 # 資料型別
-在 Python 有以下幾種內建的資料型別，
+在 Python 有以下幾種內建的資料型別，基本資料型別有 Number、String、Boolean
 
 1. 數字（Number）
 	
@@ -761,3 +761,5 @@ except ZeroDivisionError:
 6. [Top Python Interview Questions And Answers](https://intellipaat.com/interview-question/python-interview-questions/)
 7. [Python Interview Questions](https://www.interviewcake.com/python-interview-questions)
 8. [12步教你理解Python装饰器](http://foofish.net/python-decorator.html)
+
+（image via [fedoramagazine](https://cdn.fedoramagazine.org/wp-content/uploads/2015/11/Python_logo.png)）
