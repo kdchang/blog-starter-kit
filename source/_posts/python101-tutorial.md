@@ -54,7 +54,7 @@ for i in [1, 2, 3]:
 	for j in [1, 2, 3, 4]:
 		print(j + i)
 
-print("finish")
+print('finish')
 ```
 
 不過初學者很容易在縮排遇到問題，若是出現以下訊息就可以檢視是否哪裡縮排有問題：
@@ -69,7 +69,7 @@ IndentationError: expected an indented block
 ```
 import re as regex
 
-my_regex = re.compile("[0-9]+", regex.I)
+my_regex = regex.compile('[0-9]+', regex.I)
 ```
 
 若是只是需要模組中的特定功能，也可以使用比較精準的引入方式 `from import`，引入到整個命名空間中，使用時前面就不用寫模組名（但要注意有可能覆寫）：
@@ -124,7 +124,7 @@ my_counter = Counter()
 
 	```python
 	x = None
-	print x == None
+	print(x == None)
 	```
 	以下為 Python 的 Falsy 值：
 	- False 
@@ -214,7 +214,7 @@ my_counter = Counter()
 	try:
 		my_tuple[1] = 4
 	except TypeError:
-		print "cannot modify a tuple" 
+		print('cannot modify a tuple')
 	```
 
 	多重賦值
@@ -275,11 +275,11 @@ my_counter = Counter()
 	for word in document:
 		try:
 			word_counts[word] += 1
-		except KeyError"
+		except KeyError:
 			word_counts[word] = 1
 	# 使用 get
 	word_counts = {}
-	for word in document"
+	for word in document:
 		previous = word_counts.get(word, 0)
 		word_counts[word] = previous_count + 1
 	```
@@ -321,7 +321,7 @@ my_counter = Counter()
 
 	```python
 	for word, count in word_counts.most_common(10):
-		print word, count
+		print(word, count)
 	```
 
 7. 集合（Set）
@@ -431,7 +431,7 @@ def f2(x, y):
 	return x + y
 
 g = doubler_correct(f2)
-print g(1, 2)
+print(g(1, 2))
 ```
 
 # 常見內建函式
@@ -636,7 +636,7 @@ print g(1, 2)
 			continue
 		if x == 5:
 			break
-		print x
+		print(x)
 	```
 
 3. while
@@ -644,7 +644,7 @@ print g(1, 2)
 	```python
 	x = 0
 	while x < 10:
-		print x, 'is less than 10'
+		print('x is less than 10')
 		x += 1
 	```
 
