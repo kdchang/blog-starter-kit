@@ -161,7 +161,7 @@ console.log(a);
 	}
 	```
 
-4. while：當你程式不知道需要重複執行幾次時可以使用 for 迴圈
+4. while：當你程式不知道需要重複執行幾次時可以使用 while 迴圈
 
 	```javascript
 	// 從 1 累加到 10
