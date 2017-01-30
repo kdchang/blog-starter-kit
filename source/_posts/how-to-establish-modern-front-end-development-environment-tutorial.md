@@ -419,11 +419,6 @@ author: kdchang
 	    .pipe(image())
 	    .pipe(gulp.dest(imagesPaths.dest));
 	});
-
-	// 複製 html 任務，完成後送到 dist
-	gulp.task('copy-html', function(){
-	  return gulp.src(`${dirs.src}/*.html`).pipe(gulp.dest('dist'))
-	});
 	
 	// 啟動測試用 server
 	gulp.task('server', function () {
@@ -439,12 +434,11 @@ author: kdchang
 	  gulp.watch(stylesPaths.src, ['styles']);
 	  gulp.watch(scriptsPaths.src, ['scripts']);
 	  gulp.watch(imagesPaths.src, ['images']);
-	  gulp.watch(htmlPaths.src, ['copy-html']);
 	});
 
 	// 兩種任務類型，第一種會啟動 server
-	gulp.task('default', ['copy-html', 'scripts', 'styles', 'images', 'server', 'watch']);
-	gulp.task('build', ['copy-html', 'scripts', 'styles', 'images']);
+	gulp.task('default', ['scripts', 'styles', 'images', 'server', 'watch']);
+	gulp.task('build', ['scripts', 'styles', 'images']);
 
 	```
 
@@ -495,6 +489,9 @@ $ gulp
 	}
 }
 ```
+
+之後使用 $ npm start 就可以對應到 $ gulp 指令
+
 
 # 延伸閱讀
 1. [React 生態系（Ecosystem）入門簡介](https://github.com/kdchang/reactjs101/blob/master/Ch01/react-ecosystem-introduction.md)
