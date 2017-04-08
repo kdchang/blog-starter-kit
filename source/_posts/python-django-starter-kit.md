@@ -6,41 +6,33 @@ author: kdchang
 ---
 
 # 什麼是 Python？
-[Python](https://zh.wikipedia.org/wiki/Python) 是一種物件導向、直譯式的跨平台電腦程式語言，它包含了一組功能完備的標準庫和豐富套件生態系，可以輕鬆完成很多常見的任務（例如：讀寫檔案、自然語言處理、網路爬蟲、網站開發、機器學習等），因為它可以很輕易整合其他底層語言，所以又稱為膠水語言。它的語法簡單，與其它大多數程式設計語言使用大括弧不一樣，它使用縮進來定義語句塊。由於具備簡潔易學等特性，許多開發者推薦 Python 為初學者第一個學習的程式語言。由於版本更迭，我們接下來討論的主要是以 Python3 為主，若電腦沒有安裝的話，你可以在[官方網站下載](https://www.python.org/)。
+[Python](https://zh.wikipedia.org/wiki/Python) 是一種物件導向、直譯式的跨平台電腦程式語言，它包含了一組功能完備的標準庫和豐富套件生態系，可以輕鬆完成很多常見的任務（例如：檔案管理、自然語言處理、網路爬蟲、網站開發、機器學習和遊戲開發等工作），因為它可以很輕易整合其他程式語言（例如：C/C++），所以又稱為膠水語言。它的語法簡單，與其它大多數程式設計語言使用大括弧不一樣，它使用縮進來定義語句塊。由於具備簡潔易學等特性，許多開發者推薦 Python 為初學者第一個學習的程式語言。由於版本更迭，我們接下來討論的主要是以 Python3 為主，若電腦沒有安裝的話，你可以在在[Anaconda 官方網站下載](https://www.continuum.io/downloads)對應版本和作業系統，Anaconda 包含了許多重要的資料分析的套件。
 
 # 什麼是 Django？
-[Django](https://www.djangoproject.com/) 是一個使用 Python 開發 Web 的應用程式框架（Frameowork），相對於 [Flask](http://flask.pocoo.org/) 這種 micro-framework，Django 屬於一種大而全的 MVC 框架（實際上是 MTV），讓開發 Web 應用程式可以快速打造網路應用程式，而不用重複造輪子。
-
-簡單來說像 Django 這類的 Web Frameowork，就是幫你把大部分的程式架構都建構好，等你填你需要的應用邏輯進去。Framework 會負責在合適的時機呼叫你寫的程式，而不是讓你自行呼叫合適的函式（function），以搭建程式本身。
+[Django](https://www.djangoproject.com/) 是一個使用 Python 開發 Web 的應用程式框架（Frameowork），相對於 [Flask](http://flask.pocoo.org/) 這種 micro-framework，Django 屬於一種大而全的 MVC 框架（實際上是 MTV），讓開發 Web 應用程式可以快速打造網路應用程式，而不用重複造輪子。簡單來說像 Django 這類的 Web Frameowork，就是幫你把大部分的程式架構都建構好，等你填你需要的應用邏輯進去。Framework 會負責在合適的時機呼叫你寫的程式，而不是讓你自行呼叫合適的函式（function），以搭建程式本身。
  
 # 環境建置與設定
 
+1. 安裝 Python 開發環境，使用 [Anaconda 官方網站下載](https://www.continuum.io/downloads) Python3 版本
+
 ```
-$ brew install python3
+$ conda create -n pyvenv35 python=3.5 anaconda
 ```
 
 ```
-$ sudo pip3 install virtualenv
+$ source activate pyvenv35
 ```
 
 ```
-$ mkdir opencook
-$ cd opencook
+(pyvenv35)$~/
 ```
 
 ```
-// -m 代表執行模組或函式庫 
-$ virtualenv -p python3 opencook_venv
+$ source deactivate
 ```
 
 ```
-$ source opencook/bin/activate
-
-(opencook_venv)$~/
-```
-
-```
-$ deactivate
+$ conda install django
 ```
 
 # 開始 Django 專案

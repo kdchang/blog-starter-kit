@@ -5,6 +5,8 @@ tags: Python, Machine Learning, 機器學習, AI, Artificial Intelligence, NLP, 
 author: kdchang
 ---
 
+![如何打造自己的 jQuery Plugin ](machine_learning.jpg)
+
 隨著資料科學（Data Science）技術的興起，[人工智慧（Artificial Intelligence）](https://en.wikipedia.org/wiki/Artificial_intelligence)、[機器學習（Machine Learning）](https://en.wikipedia.org/wiki/Machine_learning) 成為近幾年來電腦科學界十分熱門的研究領域，如今在實體和線上的學習機器學習的資源有很多，本文整理了一些好用學習資源希望幫助初學者能更容易使用 Python 入門機器學習的領域中，從零開始學習機器學習。若是對於資料科學不熟悉的讀者可以先參考[適用於初學者的資料科學影片](https://azure.microsoft.com/zh-tw/documentation/articles/machine-learning-data-science-for-beginners-the-5-questions-data-science-answers/) ，讓自己對於資料科學有初步的認識。
 
 # 什麼是機器學習（Machine Learning）？
