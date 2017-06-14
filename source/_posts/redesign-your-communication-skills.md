@@ -42,4 +42,4 @@ author: kdchang
 2. [使用者經驗設計指南](http://labelhigh.blogspot.tw/2015/02/blog-post_12.html)
 3. [淺談Apple的使用者經驗與人機介面的設計原則(上)](http://www.naipo.com/Portals/1/web_tw/Knowledge_Center/Industry_Economy/publish-224.htm)
 
-（image via [algolist](http://www.algolist.net/img/hash-table-chaining.png)、[mcgill](http://cim.mcgill.ca/~gamboa/cs202/Material/class20/img/class20/dictionary.png)、[mindcrackerinc](http://csharpcorner.mindcrackerinc.netdna-cdn.com/UploadFile/BlogImages/08052016045037AM/Map1.png)、[hws](http://math.hws.edu/javanotes/c10/hash-table.png)、[cecilsunkure](http://1.bp.blogspot.com/-glyiSfW0o4E/T_IP8EeqlMI/AAAAAAAAAFk/hXf5GT57SpA/s1600/LinearProbeCollisionClusters.png)）
+（image via [pexels](https://static.pexels.com/photos/7061/man-people-space-desk.jpg)）
