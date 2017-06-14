@@ -1,0 +1,28 @@
+---
+title: 再讀人月神話
+date: 2017-06-10 22:00:00
+tags: Software, Software Engineering, Programming, Testing, Project Manager, Product Manager
+author: kdchang
+---
+
+![Python 101 快速入門教學 ](python-logo.png) 
+
+# 前言
+人月神話是軟體專案管理經典之作，作者 Frederick Brooks 曾服務於 IBM System/360 等大型軟體系統的專案經理，人月神話即是記錄作者在職業生涯累積的軟體開發現場的第一手經驗。這本書出版於 1975 年，至今已經超過 40 個年頭了。說實在話，其實你很難想像在變動快速的資訊科技領域要有一本書籍內容能夠歷久不衰，但人月神話確實是一本每隔個幾年閱讀都會有不同體會的經典之作。 
+
+# 
+
+# 總結
+本文快速介紹了 Python 的基礎概念，當讀者學會了 Python 後，事實上可以嘗試使用 Python 開發不同的網路應用程式或是資料科學，甚至是自然語言處理的應用。
+
+# 延伸閱讀
+1. [15 Essential Python Interview Questions](https://www.codementor.io/python/tutorial/essential-python-interview-questions)
+2. [8 Essential Python Interview Questions*](https://www.toptal.com/python/interview-questions)
+3. [Python Interview Questions](https://www.tutorialspoint.com/python/python_interview_questions.htm)
+4. [What are good Python interview questions?](https://www.quora.com/What-are-good-Python-interview-questions)
+5. [Top 40 Python Interview Questions & Answers ](http://career.guru99.com/top-25-python-interview-questions/)
+6. [Top Python Interview Questions And Answers](https://intellipaat.com/interview-question/python-interview-questions/)
+7. [Python Interview Questions](https://www.interviewcake.com/python-interview-questions)
+8. [12步教你理解Python装饰器](http://foofish.net/python-decorator.html)
+
+（image via [fedoramagazine](https://cdn.fedoramagazine.org/wp-content/uploads/2015/11/Python_logo.png)）

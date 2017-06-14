@@ -1,0 +1,23 @@
+---
+title: Python Web 程式設計開發實戰教學之 Socket 程式設計篇
+date: 2017-02-20 22:00:00
+tags: Python, TCP/UDP, TCP, UDP, Internet, Socket, Socket Programming, Web
+author: kdchang
+---
+
+本系列文章將介紹如何使用 Python 開發 Web 應用程式，此外也將分別介紹 Python 常見的 Web 框架：Django、Tornado、Flask 和 Twisted 的使用方式。本篇將介紹 Python Web 程式設計入門實戰教學之網際網路基礎知識。
+
+# 前言
+隨著網際網路（Internet）的發展，生活中許多的服務都會提供 Web 網站應用的使用方式，由於這些通訊協定和機制是網際網路的基石，因此在正式開始使用 Python 撰寫 Web 應用程式之前，我們先來了解一下網際網路的基本架構和通訊協定。
+
+以下是本文主要內容：
+
+1. 網際網路架構
+2. TCP/IP 通訊協定、UDP、B/S、C/S 模型
+3. HTTP 超文字通訊協定
+
+# 參考文件
+1. [NTUEE 網路與多媒體實驗](http://wmnlab.ee.ntu.edu.tw/nmlab/exp.html)
+2. [Python Socket 编程详细介绍](https://gist.github.com/kevinkindom/108ffd675cb9253f8f71)
+3. [TCP/UDP 埠列表](https://zh.wikipedia.org/wiki/TCP/UDP%E7%AB%AF%E5%8F%A3%E5%88%97%E8%A1%A8)
+4. [TCP/IP協定族](https://zh.wikipedia.org/zh-tw/TCP/IP%E5%8D%8F%E8%AE%AE%E6%97%8F)

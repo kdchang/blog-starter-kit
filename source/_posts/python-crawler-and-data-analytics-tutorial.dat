@@ -1,0 +1,117 @@
+---
+title: Python Web 程式設計開發實戰教學之網路爬蟲篇
+date: 2017-05-27 22:00:00
+tags: Python, Crawler, Engineer, Data Analytics, Data Science, Spidder, Web
+author: kdchang
+---
+
+Python 在字串處理和網路程式開發的優勢讓它很容易可以開發網路爬蟲，此外 Python 也擁有豐富的資料分析套件和工具。接下來我們將帶領讀者完成基本的網路爬蟲和資料分析入門教學，解析！
+
+# 環境建置
+
+首先，我們將使用 Python3 當做開發程式語言，為了減少不同平台和版本差異，建議讀者可以安裝 [Anaconda](https://www.continuum.io/downloads) 當做開發環境。 
+
+使用套件工具：
+
+1. urllib：解析網址內容
+2. requests：發出請求讀取網頁內容
+3. Beautiful Soup：針對網頁內容擷取及分析
+4. selenium：自動化測試工具
+5. phantomjs：無介面的瀏覽器 WebKit 核心
+
+# 網路爬蟲基本概念
+
+1. 解析爬取目標（觀看檢視原始碼）
+2. 撰寫程式
+3. 程式執行
+4. 儲存資料
+
+# 網址解析
+
+網站的網址事實上蘊藏不少資訊，在撰寫網路爬蟲之前，可以先觀察網站網址的一些規則，可以從中發現爬取的方式。
+以 Yahoo 奇摩電影網址為例。使用 urlparse 可以將 `https://tw.movies.yahoo.com/movie_intheaters.html?p=2` ，解析成 scheme 通訊協定名稱，netloc 網站名稱，查詢參數 query 等。其中我們發現 `p=2` 似乎就是 page 頁數的意思，也就是說我們可以透過這個參數去選取到不同頁數的內容。
+
+```
+from urllib.parse import urlparse
+
+url = 'https://tw.movies.yahoo.com/movie_intheaters.html?p=2'
+o = urlparse(url)
+print(o) 
+
+print('scheme: {}'.format(o.scheme))
+print('netloc: {}'.format(o.netloc))
+print('query: {}'.format(o.query))
+```
+
+# 解析爬取目標（觀看檢視原始碼）
+
+![]()
+
+# 擷取網頁
+
+使用 requests 擷取 Yahoo 奇摩電影內容：
+
+```
+import requests
+
+html = requests.get(url)
+html.encoding = 'utf-8'
+htmllist = html.text.splitlines()
+
+for row in htmllist:
+	print(row)
+```
+
+Beautiful Soup
+
+1. title
+2. text
+3. find
+4. find_all
+5. select
+
+# 正規表達式
+
+一種處理文字的一種工具，開發者可以容易解析文字：
+
+```
+import re
+```
+
+1. match(string)
+2. search(string)
+3. findall()
+
+# 實戰範例：PTT 網路圖片下載器
+
+```python
+import requests 
+from bs4 import BeautifulSoup
+from urllib.request import urlopen
+
+headers = {
+	'user-agenr': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+}
+
+res = requests.get('https://www.ptt.cc/man/Beauty/DF7B/D111/M.1400913738.A.BD8.html', headers=headers)
+soup = BeautifulSoup(res.text, 'html.parser')
+
+images = soup.select('a[href^=http://i.imgur]')
+
+print(images)
+
+for image in images:
+	print(image['href'])
+	filename = image['href'].split('/')[3]
+	img = urlopen(image['href'])
+	print(filename)
+	with open('./images/' + str(filename), 'wb') as f:
+		f.write(img.read())
+```
+
+# 總結
+以上介紹了簡單的網路爬蟲撰寫方式，事實上網路爬蟲在撰寫上往往會需要針對當下所要爬取的網頁進行分析後才能撰寫出合適的網路爬蟲。
+
+# 參考文件
+1. [Python 爬虫学习系列教程](http://wiki.jikexueyuan.com/project/python-crawler-guide/)
+2. [Python爬虫利器四之PhantomJS的用法](http://cuiqingcai.com/2577.html)
