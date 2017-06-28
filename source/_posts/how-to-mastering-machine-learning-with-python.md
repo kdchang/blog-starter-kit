@@ -5,12 +5,27 @@ tags: Python, Machine Learning, 機器學習, AI, Artificial Intelligence, NLP, 
 author: kdchang
 ---
 
-![如何打造自己的 jQuery Plugin ](machine_learning.jpg)
+![ 如何使用 Python 學習機器學習（Machine Learning）](machine_learning.jpg)
 
 隨著資料科學（Data Science）技術的興起，[人工智慧（Artificial Intelligence）](https://en.wikipedia.org/wiki/Artificial_intelligence)、[機器學習（Machine Learning）](https://en.wikipedia.org/wiki/Machine_learning) 成為近幾年來電腦科學界十分熱門的研究領域，如今在實體和線上的學習機器學習的資源有很多，本文整理了一些好用學習資源希望幫助初學者能更容易使用 Python 入門機器學習的領域中，從零開始學習機器學習。若是對於資料科學不熟悉的讀者可以先參考[適用於初學者的資料科學影片](https://azure.microsoft.com/zh-tw/documentation/articles/machine-learning-data-science-for-beginners-the-5-questions-data-science-answers/) ，讓自己對於資料科學有初步的認識。
 
+![ 如何使用 Python 學習機器學習（Machine Learning）](ai-history.png)
+
+# 人工智慧的發展
+[「人工智慧」（Artificial Intelligence）](https://en.wikipedia.org/wiki/Artificial_intelligence)這專有名稱正式出現在西元 1956 年，在美國達特茅斯學院 (Dartmouth College）召開的第一次人工智慧會議。根據維基百科的定義，人工智慧係指由機器所展現的智慧，一般而言人工智慧又分為「強人工智慧」（Strong AI）和「弱人工智慧」（Weak AI） 兩種不同的主張。所謂的強人工智慧指的是有自我意識、有知覺可以自己推理和解決問題的機器智慧，而「弱人工智慧」只能模擬人類的思維與行為表現，但缺乏真正的推理與解決問題的能力，也不具有自主意識。人工智慧在歷史上經歷了幾次熱潮和寒冬，從最早的邏輯推理到後來的專家系統，再到目前的機器學習/深度學習，機器學習可以視為人工智慧的一個實現方式或是發展的一個歷程。
+
+事實上，人工智慧或是機器學習都是一門跨領域的學門，牽涉了電腦科學、數學、神經學、心理學、經濟學、統計學等層面，也有許多相關的學門：
+
+![ 如何使用 Python 學習機器學習（Machine Learning）](ai-ml-dm.png)
+
+隨著運算資源（雲端運算、GPU 等）、海量資料（目前還有許多資料還沒被創造，等待我們去發掘呢）以及機器學習/深度學習的發展，生活上許多產品已經可以看到人工智慧的應用。但人工智慧最美好的境界莫過於人機之間的互動以及相輔相成，以 AlphaGO 為例，雖然人類在圍棋領域輸給人機器，但也從機器的思考方式去重新思考了圍棋的真諦和有別於人類的思考方式。
+
+>>「就因為某樣東西思考的方式跟你不一樣，就代表它沒在思考嗎？」 "Just because something thinks differently from you, does it mean it’s not thinking?" ---《模仿遊戲》《Imitation Game》(2015)
+
+![ 如何使用 Python 學習機器學習（Machine Learning）](ai-plus.png)
+
 # 什麼是機器學習（Machine Learning）？
-機器學習是一種資料科學的技術，協助電腦從現有的資料學習，以便預測未來的行為、結果和趨勢。根據學習的方式又可以分為需要解答的[監督式學習（Supervised learning）](https://en.wikipedia.org/wiki/Supervised_learning)、[非監督式學習（Unsupervised learning）](https://en.wikipedia.org/wiki/Unsupervised_learning)和[增強學習（Reinforcement learning）](https://en.wikipedia.org/wiki/Reinforcement_learning)（還有一種混合式的半監督式學習）等子類別。機器學習技術可以應用的範圍十分廣泛，總的來說機器學習可以解決以下幾種問題：
+機器學習是一種資料科學的技術也是一種實現人工智慧的一種方式，協助電腦從現有的資料學習，以便預測未來的行為、結果和趨勢。根據學習的方式又可以分為需要解答的[監督式學習（Supervised learning）](https://en.wikipedia.org/wiki/Supervised_learning)、[非監督式學習（Unsupervised learning）](https://en.wikipedia.org/wiki/Unsupervised_learning)和[增強學習（Reinforcement learning）](https://en.wikipedia.org/wiki/Reinforcement_learning)等（還有一種混合式的半監督式學習）等子類別。機器學習技術可以應用的範圍十分廣泛，總的來說機器學習可以解決以下幾種問題：
 
 1. 分類問題：這是 A 類 或 B 類嗎？
 
@@ -25,7 +40,9 @@ author: kdchang
 當我們蒐集到相關、精確、連貫、足夠資料就可以挑選合適的演算法進行模型的的建置。
 
 # 為什麼選擇 Python？
-在資料科學和機器學習領域最重要的兩大程式語言就是 Python 和 R，Python 簡潔易學、應用範圍廣（不限於數據分析）且學習曲線平緩，適合作為第一個入門的程式語言，透過 pandas、SciPy/NumPy、sckikit-learn、matplotlib 和 statsmodels 可以進行數據分析的工作，適合工程任務和需要和網路應用程式整合的專案。至於 R 由於是統計學家開發的程式語言，則是擅長於統計分析、圖表繪製，常用於學術研究領域，建議也要有一定程度的掌握。一般情況下 Python 和 R 並非互斥，而是互補，許多資料工程師、科學家往往是在 Python 和 R 兩個語言中轉換，小量模型驗證、統計分析和圖表繪製使用 R，當要撰寫演算法和資料庫、網路服務互動等情況時在移轉到 Python。為了降低學習成本，我們先使用 Python 進行介紹。
+在資料科學和機器學習領域最重要的兩大程式語言就是 Python 和 R，Python 簡潔易學、應用範圍廣（不限於數據分析）且學習曲線平緩，適合作為第一個入門的程式語言，透過 pandas、SciPy/NumPy、sckikit-learn、matplotlib 和 statsmodels 可以進行數據分析的工作，適合工程任務和需要和網路應用程式整合的專案。至於 R 由於是統計學家開發的程式語言，則是擅長於統計分析、圖表繪製，常用於學術研究領域，建議也要有一定程度的掌握。一般情況下 Python 和 R 並非互斥，而是互補，許多資料工程師、科學家往往是在 Python 和 R 兩個語言中轉換，小量模型驗證、統計分析和圖表繪製使用 R，當要撰寫演算法和資料庫、網路服務互動等情況時在移轉到 Python。為了降低學習成本。
+
+此外 Python 本身是一種通用語言，除了資料科學外也可以廣泛使用在網路開發、網站建置、遊戲開發、網路爬蟲等領域，當你需要整合系統產品服務時，可以擔任一站式的開發語言，更重要的是 Python 也可以當成膠水語言非常輕易和 C/C++ 等效能較佳的語言整合。簡而言之，Python 是一種簡潔易學但功能強大，值得投資的程式語言，所以我們這邊先使用 Python 進行介紹。
 
 若對於 Python 和 R 比較，這邊有兩篇文章可以參考 [数据科学界华山论剑：R与Python巅峰对决](http://bi.dataguru.cn/article-7257-1.html)、[Which is better for data analysis: R or Python?](https://www.quora.com/Which-is-better-for-data-analysis-R-or-Python)。
 
@@ -96,7 +113,7 @@ author: kdchang
 	- [深度學習 Deep Learning：中文學習資源整理](http://www.jerrynest.com/deep-learning-resource/)
 
 # 總結
-以上整理了一些機器學習網路學習資源，若你累積一些小小經驗後，不妨挑戰一下 [Kaggle](https://www.kaggle.com/) 測試一下自己的實力並累積更多數據分析的經驗。
+以上整理了一些機器學習網路學習資源，若你累積一些小小經驗後，不妨挑戰一下 [Kaggle](https://www.kaggle.com/) 或是 [KDD](http://www.kdd.org/kdd2017/) 測試一下自己的實力並累積更多數據分析的經驗。
 
 # 延伸閱讀
 1. [7 Steps to Mastering Machine Learning With Python](http://www.kdnuggets.com/2015/11/seven-steps-machine-learning-python.html)
