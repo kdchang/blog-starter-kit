@@ -58,6 +58,7 @@ author: kdchang
 	- [Andrew Ng 機器學習課程](https://www.coursera.org/learn/machine-learning)
 	- [Andrew Ng 機器學習筆記](http://www.holehouse.org/mlclass/)
 	- [Carnegie Mellon University Machine Learning](http://www.cs.cmu.edu/~ninamf/courses/601sp15/lectures.shtml)
+	- [Machine Learning Foundations (機器學習基石)](https://www.youtube.com/playlist?list=PLXVfgk9fNX2I7tB6oIINGBmW50rrmFTqf)
 
 3. 知道如何使用 Python 科學計算函式庫和套件
 	
@@ -111,5 +112,6 @@ author: kdchang
 11. [Using Python and R together: 3 main approaches](http://www.kdnuggets.com/2015/12/using-python-r-together.html)
 12. [机器学习最佳入门学习资源](http://blog.csdn.net/shadow_mi/article/details/51829389)
 13. [机器学习(Machine Learning)&深度学习(Deep Learning)资料(Chapter 1)](https://github.com/ty4z2008/Qix/blob/master/dl.md)
+14. [SIRAJ RAVAL'S DEEP LEARNING](https://www.udacity.com/course/deep-learning-nanodegree-foundation--nd101)
 
 （image via [respondr](http://respondr.io/wp-content/uploads/2016/03/machine_learning-1024x724.jpg)）
