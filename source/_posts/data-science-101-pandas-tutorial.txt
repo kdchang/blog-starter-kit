@@ -1,0 +1,33 @@
+---
+title: 從零開始學資料科學：Pandas 基礎入門
+date: 2017-07-22 09:54:49
+tags: Python, Machine Learning, 機器學習, AI, Artificial Intelligence, NLP, Data Mining, 人工智慧, 監督式學習, Supervised learning, 從零開始學資料科學, Numpy, 資料科學
+author: kdchang
+---
+
+![ 如何使用 Python 學習機器學習（Machine Learning）](machine_learning.jpg)
+
+# 前言
+本系列文章將透過系統介紹資料科學相關的知識，透過 Python 帶領讀者進入資料科學的世界。
+
+
+# 總結
+以上整理了一些機器學習網路學習資源，若你累積一些小小經驗後，不妨挑戰一下 [Kaggle](https://www.kaggle.com/) 或是 [KDD](http://www.kdd.org/kdd2017/) 測試一下自己的實力並累積更多數據分析的經驗。
+
+# 延伸閱讀
+1. [7 Steps to Mastering Machine Learning With Python](http://www.kdnuggets.com/2015/11/seven-steps-machine-learning-python.html)
+2. [人人都可成為資料科學大師！一整年的網路自學清單就在這了](https://buzzorange.com/techorange/2016/02/02/plan-to-be-a-data-scientist-in-new-year/)
+3. [Analytics Vidhya](https://www.analyticsvidhya.com/)
+4. [台灣資料科學年會](http://datasci.tw/)
+5. [「2016 台灣資料科學愛好者年會」精彩資料總整理(持續更新中)](http://dataology.blogspot.tw/)
+6. [大數據會消失，資料科學不會！你該知道的資料科學第一堂課](http://www.bnext.com.tw/article/view/id/40220)
+7. [如何選擇 Microsoft Azure Machine Learning 的演算法](https://azure.microsoft.com/zh-tw/documentation/articles/machine-learning-algorithm-choice/)
+8. [Microsoft Azure Machine Learning 機器學習服務文件](https://azure.microsoft.com/zh-tw/documentation/services/machine-learning/)
+9. [Kdnuggets](http://www.kdnuggets.com/)
+10. [Bigdatafinance](http://www.bigdatafinance.tw/)
+11. [Using Python and R together: 3 main approaches](http://www.kdnuggets.com/2015/12/using-python-r-together.html)
+12. [机器学习最佳入门学习资源](http://blog.csdn.net/shadow_mi/article/details/51829389)
+13. [机器学习(Machine Learning)&深度学习(Deep Learning)资料(Chapter 1)](https://github.com/ty4z2008/Qix/blob/master/dl.md)
+14. [SIRAJ RAVAL'S DEEP LEARNING](https://www.udacity.com/course/deep-learning-nanodegree-foundation--nd101)
+
+（image via [respondr](http://respondr.io/wp-content/uploads/2016/03/machine_learning-1024x724.jpg)）

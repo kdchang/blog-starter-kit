@@ -1,0 +1,16 @@
+---
+title: 我們這一代人
+date: 2017-07-16 20:00:00
+tags: 
+author: kdchang
+---
+
+![JavaScript 101 快速入門教學](javascript.png)
+
+# 前言
+最近
+
+# 延伸閱讀
+1. [用十分鐘瞭解 陳鍾誠的程式設計課 (採用JavaScript + C的原因)](http://www.slideshare.net/ccckmit/javascript-c)
+
+（image via [mpr](https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAY4AAAAJDNmOTRkMTk2LTljNDEtNDAwOS05YTJlLTFmMTg2M2YzYzBiMQ.png)、[mahmoudzalt](http://www.blog.mahmoudzalt.com/wp-content/uploads/2014/07/tools.png)）
