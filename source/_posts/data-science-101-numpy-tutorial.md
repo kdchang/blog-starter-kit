@@ -1,32 +1,44 @@
 ---
 title: 從零開始學資料科學：Numpy 基礎入門
 date: 2017-07-22 09:54:49
-tags: Python, Machine Learning, 機器學習, AI, Artificial Intelligence, NLP, Data Mining, 人工智慧, 監督式學習, Supervised learning, 從零開始學資料科學, Numpy, 資料科學
+tags: Python, Machine Learning, 機器學習, AI, Artificial Intelligence, NLP, Data Mining, 人工智慧, 監督式學習, Supervised learning, 從零開始學資料科學, Numpy, 資料科學, data science, data scientist
 author: kdchang
 ---
 
-![ 如何使用 Python 學習機器學習（Machine Learning）](numpy.jpg)
+![ 從零開始學資料科學：Numpy 基礎入門](numpy.jpg)
 
 # 前言
 本系列文章將透過系統介紹資料科學（Data Science）相關的知識，透過 Python 帶領讀者從零開始進入資料科學的世界。這邊我們將介紹 Numpy 這個強大的 Python 函式庫。
 
 # 什麼是 Numpy？
-Numpy 是 Python 的一個重要模組，主要用於資料處理上。Numpy 底層以 C 和 Fortran 語言實作，所以能快速操作多重維度的陣列。當 Python 處理龐大資料時，其原生效能表現並不理想，而 Numpy 具備平行處理的能力，可以將操作動作一次套用在大型陣列上。此外 Python 其餘重量級的資料科學相關套件（例如：Pandas、SciPy、Scikit-learn 等）都幾乎是奠基在 Numpy 的基礎上。因此學會 Numpy 對於往後學習其他資料科學相關套件打好堅實的基礎。
+Numpy 是 Python 的一個重要模組（Python 是一個高階語言也是一種膠水語言，可以透過整合其他低階語言同時擁有效能和高效率的開發），主要用於資料處理上。Numpy 底層以 C 和 Fortran 語言實作，所以能快速操作多重維度的陣列。當 Python 處理龐大資料時，其原生 list 效能表現並不理想（但可以動態存異質資料），而 Numpy 具備平行處理的能力，可以將操作動作一次套用在大型陣列上。此外 Python 其餘重量級的資料科學相關套件（例如：Pandas、SciPy、Scikit-learn 等）都幾乎是奠基在 Numpy 的基礎上。因此學會 Numpy 對於往後學習其他資料科學相關套件打好堅實的基礎。
 
 # Numpy 基礎操作
 
+![ 從零開始學資料科學：Numpy 基礎入門](arrays.png)
+
 1. Numpy 陣列
-    Numpy 的重點在於陣列的操作，其所有功能特色都建築在同質且多重維度的 `ndarray` 上。`ndarray` 的關鍵屬性是維度（ndim）、形狀（shape）和數值類型（dtype）。 
+    Numpy 的重點在於陣列的操作，其所有功能特色都建築在同質且多重維度的 `ndarray`（N-dimensional array）上。`ndarray` 的關鍵屬性是維度（ndim）、形狀（shape）和數值類型（dtype）。 一般我們稱一維陣列為 `vector` 而二維陣列為 `matrix`。一開始我們會引入 `numpy` 模組，透過傳入 `list` 到 `numpy.array()` 創建陣列。
 
     ```
+    # 引入 numpy 模組
     import numpy as np
     np1 = np.array([1, 2, 3])
     np2 = np.array([3, 4, 5])
 
+    # 陣列相加
     print(np1 + np2) # [4 6 8]
-    print(np1.ndim, np1.shape, np1.dtype) # 1 (3,) int64
+    
+    # 顯示相關資訊
+    print(np1.ndim, np1.shape, np1.dtype) # 1 (3,) int64 => 一維陣列, 三個元素, 資料型別
 
     np3 = np.array([1, 2, 3, 4, 5, 6])
+    ```
+
+    從檔案取資料：
+
+    ```
+    npd = np.genfromtxt('data.csv', delimiter=',')
     ```
 
     改變陣列維度：
@@ -36,7 +48,9 @@ Numpy 是 Python 的一個重要模組，主要用於資料處理上。Numpy 底
     print(np3.ndim, np3.shape, np3.dtype) # 2 (2, 3) int64
     ```
 
-    改變陣列型別：
+    改變陣列型別（bool、int、float、string）：
+
+    `bool` 可以包含 True、False，`int` 可以包含 int16、int32、int64。其中數字是指 `bits`。`float` 可以包含 16、32、64 表示小數點後幾位。`string` 可以是 string、unicode。`nan` 則表示遺失值。
 
     ```
     np3 = np3.astype('int64')
@@ -51,6 +65,8 @@ Numpy 是 Python 的一個重要模組，主要用於資料處理上。Numpy 底
     np1 = np.zeros([2, 3]) # array([[ 0.,  0.,  0.], [ 0.,  0.,  0.]])
     np2 = np.ones([2, 3]) # array([[ 1.,  1.,  1.], [ 1.,  1.,  1.]])
     ```
+
+![ 從零開始學資料科學：Numpy 基礎入門](numpy_indexing.png)
 
 3. 陣列索引與切片
     一維陣列操作和 Python 原生 list 類似：
@@ -67,6 +83,8 @@ Numpy 是 Python 的一個重要模組，主要用於資料處理上。Numpy 底
     print(np3[1, 0]) # 4
     ```
 
+![ 從零開始學資料科學：Numpy 基礎入門](axis.png)
+
 4. 基本操作
     使用布林遮罩來取值：
 
@@ -80,7 +98,7 @@ Numpy 是 Python 的一個重要模組，主要用於資料處理上。Numpy 底
 
     ```
     np3 = np3.reshape([2, 3])
-    print(np3.sum(axis=1)) # [6 15]
+    print(np3.sum(axis=1)) # 將 axis=1 橫向加總 [6 15]
     ```
 
 # 總結
@@ -88,5 +106,6 @@ Numpy 是 Python 的一個重要模組，主要用於資料處理上。Numpy 底
 
 # 延伸閱讀
 1. [7 Steps to Mastering Machine Learning With Python](http://www.kdnuggets.com/2015/11/seven-steps-machine-learning-python.html)
+2. [[python] numpy axis概念整理筆記](http://changtw-blog.logdown.com/posts/895468-python-numpy-axis-concept-organize-notes)
 
-（image via [berkeley](https://bids.berkeley.edu/sites/default/files/styles/400x225/public/projects/numpy_project_page.jpg?itok=flrdydei)）
+（image via [berkeley](https://bids.berkeley.edu/sites/default/files/styles/400x225/public/projects/numpy_project_page.jpg?itok=flrdydei)、[codingeek](http://www.codingeek.com/wp-content/uploads/2017/01/2D-arrays.png)、[cornell](http://pages.physics.cornell.edu/~myers/teaching/ComputationalMethods/python/anatomyarray.png)、[scipy-lectures](http://www.scipy-lectures.org/_images/numpy_fancy_indexing.png)）
