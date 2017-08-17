@@ -2,7 +2,7 @@
 title: 用 Python 自學程式設計：變數（variable）與資料型別（type）
 date: 2017-08-11 22:00:00
 tags: Python, Django, MVC, Web, MTV, Web Backend, Web Framework, 教學, Flask, 框架, coding, code, 程式設計, 自學程式設計, CS, Computer, Computer Science
-author: HappyCoder 自學程式好好玩
+author: kdchang
 ---
 
 ![Python 自學程式設計：程式設計思維入門](coding.jpg) 
