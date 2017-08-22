@@ -322,7 +322,7 @@ print(data)
 ```
 
 # 總結
-以上就是程式設計思維入門簡介，透過了解什麼是程式設計思維和不同語言的特性，我們將對於自學程式設計有更正確的認識。接下來我們將透過 Python 介紹程式設計的內涵和不同的應用情境。當然，網路上也有[許多學習資源](http://happycoder.org/2017/01/27/learning-coding-programming-tutorial-and-resource/)可以當做參考。
+以上就是程式設計思維入門簡介，透過了解什麼是程式設計思維和不同語言的特性，我們將對於自學程式設計有更正確的認識。接下來我們將透過 Python 介紹程式設計的內涵和不同的應用情境。當然，網路上也有[許多學習資源](http://happycoder.org/2017/01/27/learning-coding-programming-tutorial-and-resource/)可以當做參考，若你需要先建立基本的電腦科學知識的話，可以參考哈佛大學的熱門公開課程 [CS50](https://cs50.harvard.edu/)
 
 （image via [mshcdn](https://i.amz.mshcdn.com/rRxXhoIhNucutinAio8YRF4TvzE=/1200x630/2017%2F06%2F15%2F71%2Fc1a206081efd44d1b61f5c0f86dcda6c.c222e.jpg)）
 
@@ -332,3 +332,5 @@ print(data)
 3. [Python Web 程式設計入門實戰](http://pics.ee/c34g)
 4. [非本科生，我想半路出家學寫程式，該如何開始？](https://cofounderinc.com/2015/03/15/lerning-how-to-write-code/)
 5. [自學程式設計學習資源懶人包](http://happycoder.org/2017/01/27/learning-coding-programming-tutorial-and-resource/)
+6. [CS50](https://cs50.harvard.edu/)
+7. [CS50 TV](http://cs50.tv/2016/fall/)
