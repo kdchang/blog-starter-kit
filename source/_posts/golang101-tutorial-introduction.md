@@ -47,7 +47,7 @@ go version go1.9 darwin/amd64
 
 在 Go 中也提供了許多方便指令，方便我們編譯、測試和執行程式：
 
-![Go Web 程式設計入門教學](/images/golang101/go-command.png)
+![Go Web 程式設計入門教學](go-command.png)
 
 編譯檔案
 ```
@@ -164,5 +164,6 @@ func main() {
 4. [Go Programming Language: An Introductory Tutorial](https://www.toptal.com/go/go-programming-a-step-by-step-introductory-tutorial)
 5. [Go tour Exercise](https://github.com/davidhoo/go-tour)
 6. [Ubuntu Go install](https://github.com/golang/go/wiki/Ubuntu)
+7. [從Go看現代程式語言](http://www.ithome.com.tw/voice/99698)
 
 （image via [cuelogic](http://www.cuelogic.com/blog/wp-content/uploads/2017/06/go_lang1.png)）
