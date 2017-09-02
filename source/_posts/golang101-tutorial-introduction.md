@@ -54,7 +54,7 @@ go version go1.9 darwin/amd64
 $ go build
 ```
 
-執行單元測試（unit testing）
+執行單元測試（unit testing），Go 一開始就內建了測試的機制，執行 go test 的話，會自動讀取套件目錄中的 *_test.go 來進行編譯、測試
 ```
 $ go test
 ```
