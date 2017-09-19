@@ -11,6 +11,5 @@ author: kdchang
 最近
 
 # 延伸閱讀
-1. [用十分鐘瞭解 陳鍾誠的程式設計課 (採用JavaScript + C的原因)](http://www.slideshare.net/ccckmit/javascript-c)
 
 （image via [mpr](https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAY4AAAAJDNmOTRkMTk2LTljNDEtNDAwOS05YTJlLTFmMTg2M2YzYzBiMQ.png)、[mahmoudzalt](http://www.blog.mahmoudzalt.com/wp-content/uploads/2014/07/tools.png)）

@@ -43,13 +43,25 @@ layout: layout
                 post-container">
                 <br>
                 <!-- Go to www.addthis.com/dashboard to customize your tools -->
-                <div class="addthis_native_toolbox"></div>
+                <div>
+                    <div class="fb-like" data-href="https://www.facebook.com/startupengineering" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+                </div>
 
                 <%- page.content %>
 
                 <br>
+                <div>喜歡我們的文章嗎？歡迎分享按讚給予我們支持和鼓勵！</div>
+                <div>
+                    <div class="fb-like" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+                </div>
+                <br>
+                <div>
+                    <div class="fb-page" data-href="https://www.facebook.com/startupengineering" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/startupengineering" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/startupengineering">Startup Engineering 新創工程師的筆記</a></blockquote></div>
+                </div>
+
+                <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5728979c6a10856b"></script>
                 <!-- Go to www.addthis.com/dashboard to customize your tools -->
-                <div class="addthis_native_toolbox"></div>
+                <div class="addthis_sharing_toolbox"></div>
                 
                 <hr>
                 <% if(config['disqus_username']) { %>
