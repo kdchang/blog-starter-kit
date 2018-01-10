@@ -1,5 +1,5 @@
 ---
-title: 從零開始學資料科學：Numpy 基礎入門
+title: 用 Python 自學資料科學與機器學習入門實戰：Numpy 基礎入門
 date: 2017-07-22 09:54:49
 tags: Python, Machine Learning, 機器學習, AI, Artificial Intelligence, NLP, Data Mining, 人工智慧, 監督式學習, Supervised learning, 從零開始學資料科學, Numpy, 資料科學, data science, data scientist
 author: kdchang
