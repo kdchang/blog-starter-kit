@@ -1,0 +1,64 @@
+---
+title: 打造你的第一個 Progressive Web Apps 入門實戰教學
+date: 2017-12-20 10:23:23
+author: 張凱迪 (kdchang)
+tags: 
+    - Progressive Web Apps
+    - google
+    - web
+    - pwa
+    - mobile
+    - web app
+    - mobile app
+    - mobile web app
+    - 行動網路
+---
+
+![Progressive Web Apps：入門實戰教學](what-is-pwa-img.png)
+
+# 前言
+Web 已經發展了超過了 20 年，
+
+# 什麼是 Progressive Web Apps？
+Progressive Web Apps 是結合了 Web 和 原生應用中最好功能的一種體驗。對於首次訪問的用戶它是非常有利的, 用戶可以直接在瀏覽器中進行訪問，不需要安裝應用。隨著時間的推移當用戶漸漸地和應用建立了聯系，它將變得越來越強大。它能夠快速地加載，即使在比較糟糕的網絡環境下，能夠推送相關消息, 也可以像原生應用那樣添加至主屏，能夠有全屏瀏覽的體驗。
+
+Reliable - Load instantly and never show the downasaur, even in uncertain network conditions.
+Fast - Respond quickly to user interactions with silky smooth animations and no janky scrolling.
+Engaging - Feel like a natural app on the device, with an immersive user experience.
+
+漸進增強 - 能夠讓每一位用戶使用，無論用戶使用什麽瀏覽器，因為它是始終以漸進增強為原則。
+響應式用戶界面 - 適應任何環境：桌面電腦，智能手機，筆記本電腦，或者其他設備。
+不依賴網絡連接 - 通過 service workers 可以在離線或者網速極差的環境下工作。
+類原生應用 - 有像原生應用般的交互和導航給用戶原生應用般的體驗，因為它是建立在 app shell model 上的。
+持續更新 - 受益於 service worker 的更新進程，應用能夠始終保持更新。
+安全 - 通過 HTTPS 來提供服務來防止網絡窺探，保證內容不被篡改。
+可發現 - 得益於 W3C manifests 元數據和 service worker 的登記，讓搜索引擎能夠找到 web 應用。
+再次訪問 - 通過消息推送等特性讓用戶再次訪問變得容易。
+可安裝 - 允許用戶保留對他們有用的應用在主屏幕上，不需要通過應用商店。
+可連接性 - 通過 URL 可以輕松分享應用，不用復雜的安裝即可運行。
+
+# 你需要準備什麼？
+
+
+# 你會學到什麼？
+
+# 
+
+
+
+# 影片教學
+<iframe width="560" height="315" src="https://www.youtube.com/embed/m-sCdS0sQO8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+# 參考文件
+1. [下一代 Web 应用模型 —— Progressive Web App](https://huangxuan.me/2017/02/09/nextgen-web-pwa/)
+2. [Progressive Web Apps](https://developers.google.com/web/progressive-web-apps/)
+3. [Progressive Web App 會是未來趨勢嗎？](https://blog.techbridge.cc/2016/07/23/progressive-web-app/)
+4. [我們真的需要網頁版App嗎？Google PWA的困局](http://tech.fanpiece.com/leiphone/%E6%88%91%E5%80%91%E7%9C%9F%E7%9A%84%E9%9C%80%E8%A6%81%E7%B6%B2%E9%A0%81%E7%89%88App%E5%97%8E-Google-PWA%E7%9A%84%E5%9B%B0%E5%B1%80-c1231263.html)
+5. [Getting Started With Progressive Web Apps (PWA)](https://medium.com/codingthesmartway-com-blog/getting-started-with-progressive-web-apps-pwa-ab05bcc25bfd)
+6. [30 天 Progressive Web App 學習筆記](https://ithelp.ithome.com.tw/users/20071512/ironman/1222)
+7. [PWA 與 Service Worker](https://www.slideshare.net/newstory0113/pwa-html5)
+8. [Why does The Washington Post’s Progressive Web App increase engagement on iOS?](https://cloudfour.com/thinks/why-does-the-washington-posts-progressive-web-app-increase-engagement-on-ios/)
+9. [Progressive Web App in my points of view](https://huangxuan.me/pwa-in-my-pov/#/)
+10. [你的首個 Progressive Web App](https://developers.google.com/web/fundamentals/codelabs/your-first-pwapp/)
+
+（image via [ionicframework](https://blog.ionicframework.com/wp-content/uploads/2016/05/what-is-pwa-img.png)）

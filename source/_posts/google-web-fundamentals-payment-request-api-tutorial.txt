@@ -1,0 +1,342 @@
+---
+title: 使用 Payment Request API 進行無痛支付
+date: 2017-12-21 10:23:23
+author: 張凱迪 (kdchang)
+tags: 
+    - Progressive Web Apps
+    - google
+    - web
+    - pwa
+    - mobile
+    - web app
+    - mobile app
+    - mobile web app
+    - 行動網路
+---
+
+本文翻譯自 Google Web Fundamentals 的 [Frictionless payment with Payment Request API](https://developers.google.com/web/fundamentals/codelabs/payment-request-api/)，若要參考原始碼[請看這裡](https://github.com/google-developer-training/pwa-ecommerce-demo)。
+
+# 概論
+歡迎來到使用 Payment Request API 進行無痛支付這個單元。在這個單元中我們將學習如何在現存的電子商務網站實作 Payment Request API 功能。那麼就讓我們開始吧！
+
+## 你會需要準備
+1. 一個搭載 Android 作業系統的裝置和 USB 連接線
+2. 具備終端機的電腦
+3. 至少 56 版本（含）以上的 Chrome for Android 瀏覽器
+4. 可以連線到網路的環境
+5. 一個文字編輯器
+
+![使用 Payment Request API 進行無痛支付](1.png)
+
+# 開始專案
+從 Github 下載位於 E-Commerce lab 專案 `payment-request-api` 分支的檔案
+
+```
+$ git clone -b payment-request-api https://github.com/google-developer-training/pwa-ecommerce-demo.git
+```
+
+`
+注意若您不是使用 Git，請使用 [下載]()
+`
+
+這個檔案庫包含了 project 和 solution 等資料夾，其中 project 資料夾會負責建立 app，遵循 codelab 的範例解決方案
+
+![使用 Payment Request API 進行無痛支付](2.png)
+
+接著移動到 clone 下來的專案中
+
+```
+$ cd pwa-ecommerce-demo/project
+```
+
+移動到資料夾後，請執行 `npm install` 指令
+
+```
+$ npm install
+```
+
+這個指令會創建一個 `node_modules` 資料夾並把需要的模組安裝進去，這可能會需要一點時間，請耐心等待。
+
+
+以下指令會將 dist 內檔案跑在本地端的測試伺服器上。只要維持伺服器的啟動，若您有進行更改 JavaScript 檔案的話會自動重新刷新頁面。
+```
+$ npm run serve
+```
+
+打開瀏覽器並在網址列輸入 [http://localhost:8080](http://localhost:8080)，您將可以看到初始化的 App 正在運行。 
+
+現在，您應該可以看到一個電子商務應用正在運行中，在這個 App，你必須加入購物車並進行到結帳表單。把玩一下這個網站並了解它背後運作的邏輯。
+
+![使用 Payment Request API 進行無痛支付](3.png)
+
+![使用 Payment Request API 進行無痛支付](4.png)
+
+`
+注意：你所填的資訊只會傳送到你本地端的伺服器，但還是建議您使用假的資料進行驗證。不過即使是假資料還是建議您按照規定格式填寫以通過信用卡號驗證，例如：隨機 CVC 碼 4242 4242 4242 4242
+`
+
+從現在開始您會開始實作 Payment Request API。
+
+Payment Request API 目前還未在 Chrome 58 上支援，所以若是你使用低於這個版本的讀者，建議使用 Android 裝置上的 Chrome 去操作部屬在本地端伺服器的電子商務的 App。
+
+## 創建一個支付請求
+
+1. 偵測功能是否可以使用
+    首先，我們必須先偵測 Payment Request API 是否可以在使用者的瀏覽器上使用。如果可以則可以使用 Payment Request API 進行支付。
+    
+    請先取代範例代碼中在 app/scripts/modules/app.js 中 "TODO PAY-3.1" 位置的 `if (false) {` 為：
+
+    app.js
+    ```
+    if (window.PaymentRequest) {
+    ```
+
+    這會偵測使用者的瀏覽器是否支援 Payment Request API
+
+2. 創建一個 PaymentRequest
+    接著使用 PaymentRequest 建構子來創建 Payment Request 物件：
+
+    請先取代範例代碼中在 app/scripts/modules/payment-api.js 中 "TODO PAY-3.2" 為下列代碼： 
+
+    payment-api.js
+    ```
+    let request = new PaymentRequest(supportedInstruments, details, paymentOptions);
+    ```
+    這個建構子會含有三個參數
+
+    supportedInstruments：第一個參數是支援的方式，包括基本的信用卡到支付工具，例如：Android Pay。在這邊我們使用基本信用卡
+
+    details：第二個參數是交易的資訊，交易所需要呈現給使用者的所有資料，例如：商品資訊、幣別和價格，但也可以包括交易中商品細項。
+
+    paymentOptions：第三個參數是選擇性的參數，付款人姓名、信箱和物流資訊。
+
+    現在您應該可以嘗試 Payment Request API 了，執行以下指令並在您的 Android 裝置上觀看：
+
+    ```
+    $ npm run serve
+    ```
+
+    ![使用 Payment Request API 進行無痛支付](5.png)
+
+3 新增支付方法
+    這邊我們請先取代範例代碼中在 app/scripts/modules/payment-api.js 中 "TODO PAY-4" 為下列代碼：
+
+    ```
+    {
+        supportedMethods: ['basic-card'],
+        data: {
+            supportedNetworks: ['visa', 'mastercard', 'amex',
+            'jcb', 'diners', 'discover', 'mir', 'unionpay']
+        }
+    }
+    ```
+    PaymentRequest 建構子第一個參數可以是一個物件，supportedMethods 是陣列資料結構儲存的支付方法，data 是更詳細的資料，例如支援的信用卡機構、卡片類別等
+
+    ![使用 Payment Request API 進行無痛支付](6.png)
+
+4. 新增支付細節
+    現在我們來新增購買交易細節
+
+    這部份已經實作好在 `app/scripts/modules/payment-api.js` 的 buildPaymentDetails() 了
+
+    ```payment-api.js
+    let details = {
+    displayItems: displayItems, // 最後顯示的商品項目
+    total: {
+        label: 'Total due',
+        amount: {currency: 'USD', value: String(total)}
+    }
+    // TODO PAY-7.2 - allow shipping options
+    };
+    return details;
+    ```
+
+    這邊我們請先取代範例代碼中在 app/scripts/modules/payment-api.js 中 "TODO PAY-5" 的 `let displayItems = [];` 為下列代碼：
+
+    ```payment-api.js
+    let displayItems = cart.cart.map(item => {
+        return {
+            label: `${item.sku}: ${item.quantity}x $${item.price}`, // 商品資訊
+            amount: {currency: 'USD', value: String(item.total)} // 價格資訊
+        };
+    });
+    ```
+
+![使用 Payment Request API 進行無痛支付](7.png)
+5. 完成 PaymentRequest
+    這邊我們請先取代範例代碼中在 app/scripts/modules/payment-api.js 中的 `return request.show();` "TODO PAY-6" 為下列代碼：
+
+    ```payment-api.js
+        return request.show()
+        .then(r => {
+            // The UI will show a spinner to the user until
+            // `request.complete()` is called.
+            response = r;
+            let data = r.toJSON();
+            console.log(data);
+            return data;
+        })
+        .then(data => {
+            return sendToServer(data);
+        })
+        .then(() => {
+            response.complete('success');
+            return response;
+        })
+        .catch(e => {
+            if (response) {
+            console.error(e);
+            response.complete('fail');
+            } else if (e.code !== e.ABORT_ERR) {
+            console.error(e);
+            throw e;
+            } else {
+            return null;
+            }
+        });
+    ```
+
+    PaymentRequest 使用介面會被 show() 所觸發，這會顯示一個原生的介面讓使用者可以填寫夠改相關資訊，當使用者按下接受會產生 Promise resolves，若是拒絕會產生 Promise reject，當同意則發出 POST 請求並使用 toJSON() 進行資料序列化，一旦伺服器回傳，則在 complete() 中去告知使用者支付成功或者失敗。
+
+    重新啟動伺服器：
+
+    ```
+    $ npm run serve
+    ```
+
+    ![使用 Payment Request API 進行無痛支付](8.png)
+
+    ![使用 Payment Request API 進行無痛支付](9.png)
+
+    ![使用 Payment Request API 進行無痛支付](10.png)
+
+6. 定義物流選項
+
+    這邊我們請先取代範例代碼中在 app/scripts/modules/payment-api.js "TODO PAY-7.1" 為下列代碼：
+
+    ```payment-api.js
+    requestShipping: true,
+    ```
+
+    這邊我們請先取代範例代碼中在 app/scripts/modules/payment-api.js "TODO PAY-7.2" 為下列代碼：
+
+    ```payment-api.js
+    shippingOptions: displayedShippingOptions
+
+    ```
+    幸運地，SHIPPING_OPTIONS 已經先定義在 `app/scripts/modules/payment-api.js`
+    這邊我們請先取代範例代碼中在 app/scripts/modules/payment-api.js "TODO PAY-7.3" 為下列代碼：
+
+    ```payment-api.js
+    let displayedShippingOptions = [];
+    if (shippingOptions.length > 0) {
+    let selectedOption = shippingOptions.find(option => {
+        return option.id === shippingOptionId;
+    });
+    displayedShippingOptions = shippingOptions.map(option => {
+        return {
+        id: option.id,
+        label: option.label,
+        amount: {currency: 'USD', value: String(option.price)},
+        selected: option.id === shippingOptionId
+        };
+    });
+    if (selectedOption) total += selectedOption.price;
+    }
+    ```
+
+    記得 id 編號是獨一無二的
+
+    ![使用 Payment Request API 進行無痛支付](11.png)
+
+    注意 Shipping 會需要處理 `shippingaddresschange`
+
+7. 新增事件處理
+    如果使用者填寫的地址沒辦法運送怎麼辦？透過觸發 shippingaddresschange 事件在 callback function 中處理
+
+    這邊我們請先取代範例代碼中在 app/scripts/modules/payment-api.js "TODO PAY-8.1" 為下列代碼：
+
+    ```payment-api.js
+    // When user selects a shipping address, add shipping options to match
+    request.addEventListener('shippingaddresschange', e => {
+    e.updateWith((_ => {
+            // Get the shipping options and select the least expensive
+            shippingOptions = this.optionsForCountry(request.shippingAddress.country);
+            selectedOption = shippingOptions[0].id;
+            let details = this.buildPaymentDetails(cart, shippingOptions, selectedOption);
+            return Promise.resolve(details);
+        })());
+    });
+    ```
+
+    ![使用 Payment Request API 進行無痛支付](12.png)
+
+    若傳入空陣列到 shippingOptions 代表無法運送
+
+8. 新增 shippingoptionchange 監聽器
+    黨我們改了 shipping 會觸發 shippingoptionchange 事件
+    這邊我們請先取代範例代碼中在 app/scripts/modules/payment-api.js "TODO PAY-8.2" 為下列代碼：
+
+    ```payment-api.js
+    // When user selects a shipping option, update cost, etc. to match
+    request.addEventListener('shippingoptionchange', e => {
+    e.updateWith((_ => {
+        selectedOption = request.shippingOption;
+        let details = this.buildPaymentDetails(cart, shippingOptions, selectedOption);
+        return Promise.resolve(details);
+    })());
+    });
+    ```
+
+    當接收 shippingoptionchange 會把資料更新，可以看一下 `app/scripts/modules/payment-api.js` 中 buildPaymentDetails() 是如何運作。
+
+    ![使用 Payment Request API 進行無痛支付](13.png)
+
+9. 新增 payment 選項
+    除了地址，我們要求要訂購者的信箱、手機和姓名
+
+    這邊我們請先取代範例代碼中在 app/scripts/modules/payment-api.js "TODO PAY-9" 為下列代碼：
+
+    payment-api.js
+    ```
+    requestPayerEmail: true,
+    requestPayerPhone: true,
+    requestPayerName: true
+    ```
+
+    ![使用 Payment Request API 進行無痛支付](14.png)
+
+    重新啟動伺服器，來看一下結果：
+
+    ```
+    $ npm run serve
+    ```
+
+    ![使用 Payment Request API 進行無痛支付](15.png)
+
+    最後我們嘗試填寫測試用的資訊，最後結帳，耶我們可以整合 Payment API 到我們的電子商務平台了！
+    
+    以上只是一個簡單範例，若讀者想更進一步學習，以下列出更多參考資源：
+
+# 學習資源
+[Bringing Easy and Fast Checkout with Payment Request API](https://developers.google.com/web/updates/2016/07/payment-request)
+[Payment Request API: an Integration Guide](https://developers.google.com/web/fundamentals/discovery-and-monetization/payment-request/)
+[Web Payments session video at Chrome Dev Summit 2017](https://www.youtube.com/watch?v=U0LkQijSeko)
+
+# 標準文件
+[Payment Request API](https://w3c.github.io/browser-payment-api/)
+[Payment Handler API](https://w3c.github.io/webpayments-payment-apps-api/)
+
+# Demos
+[https://paymentrequest.show/demo/](https://paymentrequest.show/demo/)
+[https://googlechrome.github.io/samples/paymentrequest/](https://googlechrome.github.io/samples/paymentrequest/)
+[https://woocommerce.paymentrequest.show/](https://woocommerce.paymentrequest.show/)
+
+# Android Pay
+[範例教學](https://codelabs.developers.google.com/codelabs/android-pay-web/)
+
+# 參考文件
+1. [統一網頁支付介面：Payment Request API](https://blog.techbridge.cc/2017/10/14/payment-request-api/)
+2. [PaymentRequest Sample](https://googlechrome.github.io/samples/paymentrequest/)
+
+（image via [ionicframework](https://blog.ionicframework.com/wp-content/uploads/2016/05/what-is-pwa-img.png)）
