@@ -207,8 +207,11 @@ search:
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
-deploy: 
+# deploy: 
+#   type: git
+#   repo: https://github.com/kdchang/blog.git
+#   branch: gh-pages
+deploy:
   type: git
-  repo: https://github.com/kdchang/blog.git
+  repo: https://gh_token@github.com/kdchang/blog.git
   branch: gh-pages
-#  https://www.flickr.com/photos/derek-john-lee/14698093740/in/photolist-ooPzcj-r2kVt-ppV21v-brhFX3-wd3Qsy-cLiKEL-xDR92-28QCtA-29YFZZ-gzuZk-dqbhxt-9FwCBY-q57bEv-bVhZJr-dYxGXn-dxg9g7-8x7gjU-dzjMic-rQhf-9TMgJ3-mEsFjW-qbzd4p-q6cJvc-7zYttk-q2gE5S-bdb4G4-8ifmQN-eivVeg-9ZZFVz-aD6q6r-bnjfWh-qJAn2g-k22Ttf-n9Jhfj-kk4woh-sj43iz-5NYGUn-96wNhi-9ZZFz6-8DJkQf-4wQizw-3bzz8p-9yzTSd-xDQee-68Xwfp-7t5WPx-xDTM5-o5RPYA-kWihhy-7iHDEX
