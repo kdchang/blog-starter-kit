@@ -169,16 +169,9 @@ addthis:
 robotstxt:
   useragent: "*"
   disallow:
-    - /js/
-    - /css/
-    - /fonts/
-    - /vendors/
-    - /fancybox/
-  allow:
-    - /
-    - /archives/
+    - ''
   sitemap: 
-    - /sitemap.xml
+    - https://blog.kdchang.cc/sitemap.xml
   baidusitemap: 
     - /baidusitemap.xml
 
