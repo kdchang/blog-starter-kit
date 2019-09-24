@@ -7,7 +7,7 @@ header-img: "img/about-bg.jpg"
 
 > @kdchang 文藝型開發者，夢想是做出人們想用的產品和辦一所心目中理想的學校。A Starter, Software Engineer & Maker. JavaScript, Python & Arduino/Android lover.:)
 
-張凱迪（KD Chang）台灣大學，主修經濟學，臺大資管所。服務過上市電子公司、人工智慧新創公司、全球前三大瀏覽器製造商與電子商務平台，也曾參與數個新創組織的創辦。現專注於探索 Mobile、 AI 和 IoT 的各種可能。同時也是 React 入門教學書[《從零開始學 ReactJS》](https://www.gitbook.com/book/kdchang/react101/details)作者、[TechBridge Weekly 技術週刊](http://weekly.techbridge.cc/) 和 [HackNTU 臺大黑客松](https://github.com/HackNTU) 的共同創辦人。是個半路出家的工程師，致力於整合科技與人文，讓這個世界更加開放美好。
+張凱迪（KD Chang）台灣大學，主修經濟學，臺大資管所。服務過上市電子公司、人工智慧新創公司、全球前三大瀏覽器製造商與電子商務平台，也曾參與數個新創組織的創辦。同時也是 React 入門教學書[《從零開始學 ReactJS》](https://www.gitbook.com/book/kdchang/react101/details)作者、[TechBridge Weekly 技術週刊](http://weekly.techbridge.cc/) 和 [HackNTU 臺大黑客松](https://github.com/HackNTU) 的共同創辦人。同時具備電腦科學與社會科學的背景知識，致力於整合科技與人文，讓這個世界更加開放美好。
 
 • Have interdisciplinary background (Computer Science and Social Science).
 • Open source contributor (2200+ stars in [Github](http://github-awards.com/users/search?login=kdchang)).
