@@ -2,7 +2,7 @@
 layout: "about"
 title: "About"
 date: 2016-04-21 04:48:33
-header-img: "img/cover4.jpg"
+header-img: "img/about-bg.jpg"
 ---
 
 > 記錄一個軟體工程師/教育者/作者也是一個創業者對教育、媒體出版、產品設計、創新創業、政治經濟與職場人生的思考與觀察
