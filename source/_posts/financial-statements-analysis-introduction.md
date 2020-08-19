@@ -1,11 +1,17 @@
 ---
 title: 財報分析入門筆記
 date: 2017-06-30 22:00:00
-tags: financial, statement, financial statement, income statement, balance sheet, Cash flow statement, finance
+header-img: "cover.jpg"
+tags:
+    - financial
+    - statement
+    - financial statement
+    - income statement
+    - balance sheet
+    - Cash flow statement
+    - finance
 author: kdchang
 ---
-
-![一看就懂的財報分析入門教學](cover.jpg) 
 
 # 前言
 財務報表是一家公司的體質檢查表，透過財務報表可以了解這家公司的財務狀況和營運狀況，也就是說可以透過財務報表去一窺公司的身體健康是否硬朗或是漸漸亮起紅燈。許多人以為財務報表晦澀難懂，只有經營者、會計師或是財務分析師才需要了解。事實上，財務報表的觀念並不難懂，不管是投資大眾甚至是公司員工應該都要對自己投資和工作的公司要有所掌握，一般投資人若能了解財報就有機會從中挖掘被低估的優質股票進而獲取相對報酬（賺錢），而一般員工若能掌握財報資訊，更能全面性了解公司營運狀況和未來發展方向，為自己的職涯加分。

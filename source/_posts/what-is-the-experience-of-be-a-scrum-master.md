@@ -131,9 +131,6 @@ tags:
 # 總結
 以上透過一個 Scrum Master 視角去探討 Scrum Master 在 Scrum Team 中所扮演的角色和可能遇到的挑戰和機遇。Scrum Master 是一個必須對於產品開發流程以及溝通能力有一定掌握並具備一定的技術實力的角色。說真的，真正要當的好 Scrum Master，不容易。事實上，Scrum 真正目標在於建立一個自我管理的組織，讓 Process 而非人來管理。當 Scrum 真正成功的時候，就是 Scrum Master 可以退休的時候了。
 
-關於作者：
-[@kdchang](http://blog.kdchang.cc) 文藝型開發者，夢想是做出人們想用的產品和辦一所心目中理想的學校。A Starter & Maker. JavaScript, Python & Arduino/Android lover.:) 
-
 # 參考文件
 1. [燃尽图 （Burn up and Burn down Chart）—介绍](https://zhuanlan.zhihu.com/p/28314519)
 2. [Clear Acceptance Criteria and Why They’re Important](https://rubygarage.org/blog/clear-acceptance-criteria-and-why-its-important)
