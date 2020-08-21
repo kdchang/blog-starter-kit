@@ -28,8 +28,19 @@
 
     <!-- og tag -->
     <meta name="generator" content="<%- config.title %>">
-    <meta name="og:type" content="website">
+    <% if (page.title) { %>
+      <meta name="og:title" content="<%= page.title + ' - ' + config.SEOTitle %>">
+      <meta name="og:site_name" content="<%= page.title + ' - ' + config.SEOTitle %>">
+    <% } else{%>
+      <meta name="og:title" content="<%= config.SEOTitle %>">
+      <meta name="og:site_name" content="<%= config.SEOTitle %>">
+    <% } %>
+    <meta name="og:description" content="<%= config.description %>">
 
+    <meta name="og:image" content="<%= config.root %>img/favicon.ico">
+    <meta name="og:type" content="website">
+    <!--Twitter Graph-->
+    <meta name="twitter:card" content="summary" />
     <!-- Custom Fonts -->
     <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
     <!-- font-awesome CDN to qiniu -->
