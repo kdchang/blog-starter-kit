@@ -10,6 +10,7 @@ tags:
     - balance sheet
     - Cash flow statement
     - finance
+    - 財務
 author: kdchang
 ---
 

@@ -46,7 +46,7 @@ layout: layout
                 <br>
                 <!-- Go to www.addthis.com/dashboard to customize your tools -->
                 <div>
-                    <div class="fb-like" data-href="https://www.facebook.com/StartupLifeNotes" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+                    <div class="fb-like" data-href="https://www.facebook.com/kdchang.cc" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
                 </div>
 
                 <%- page.content %>
@@ -58,13 +58,20 @@ layout: layout
                 </div>
                 <br>
                 <div>
-                    <div class="fb-page" data-href="https://www.facebook.com/StartupLifeNotes" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/StartupLifeNotes" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/StartupLifeNotes">KD Chang（張凱迪）</a></blockquote></div>
+                    <div class="fb-page" data-href="https://www.facebook.com/kdchang.cc" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/kdchang.cc" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/kdchang.cc">KD Chang（張凱迪）</a></blockquote></div>
                 </div>
 
                 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5728979c6a10856b"></script>
                 <!-- Go to www.addthis.com/dashboard to customize your tools -->
                 <div class="addthis_sharing_toolbox"></div>
-                
+                <hr>
+                <div>
+                    <h3>Related Posts</h3>
+                    <div>
+                        <%- popular_posts( {} , page ) %>
+                    </div>
+                </div>
+                <!-- Tags -->
                 <hr>
                 <% if(config['disqus_username']) { %>
                 <!-- disqus start -->

@@ -1,7 +1,10 @@
 ---
 title: 給工程師的 Sketch Prototyping 簡易入門教學 
 date: 2016-06-04 12:26:00
-tags: Sketch, Prototyping, Wireframe, Mockup
+tags:
+    - SketchPrototyping
+    - Wireframe
+    - Mockup
 author: kdchang
 ---
 

@@ -1,8 +1,21 @@
 ---
 title: 在注意力稀缺的時代重新找回深度工作力（Deep Work）
 date: 2017-09-10 22:00:00
-tags: 職場, 商業管理, 人生, 溝通, 專注力, focus, deep work, 深度工作力, 工作力, career, work, 生產力工具
 author: kdchang
+tags:
+    - 職場
+    - 商業管理
+    - 人生
+    - 溝通
+    - 專注力
+    - focus
+    - deep work
+    - 深度工作力
+    - 工作力
+    - career
+    - work
+    - 生產力工具
+    - 財務
 ---
 
 ![在注意力稀缺的時代重新找回深度工作力](deep-work.jpg)
