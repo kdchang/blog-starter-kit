@@ -27,8 +27,6 @@ layout: layout
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 post-container">
                 <%- body %>
                 <br>
-                <!-- Go to www.addthis.com/dashboard to customize your tools -->
-                <div class="addthis_native_toolbox"></div>
             </div>
     <!-- Sidebar Container -->
             <div class="
@@ -208,6 +206,8 @@ layout: layout
                 <% }%>
                 <hr>
                 <!-- facebook follow -->
+                <a href="https://twitter.com/<%= config.twitter_username %>?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @<%= config.twitter_username %></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <br>
                 <div class="fb-like" data-href="https://www.facebook.com/kdchang.cc" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div>
             </div>
         <%} %>
